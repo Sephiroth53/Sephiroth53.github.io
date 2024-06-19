@@ -1,0 +1,364 @@
+@font-face {
+    font-family: 'font-Poller';
+    src: url('fonts/PollerOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font-Bitter';
+    src: url('fonts/Bitter-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font-Bitter-Light';
+    src: url('fonts/Bitter-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font-Bitter-SemiBold';
+    src: url('fonts/Bitter-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font-SourceSerifPro';
+    src: url('fonts/s') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #A40B0B;
+    background-image: url('Images/rh.png'); /* Background image */
+    background-size: auto 30%; /* Cover the entire background area */
+    background-position: center; /* Center the background image */
+    background-repeat: repeat-y; /* Prevents the background image from repeating */
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+    
+}
+
+/* FOR FADE IN ANIMATION OF DIV HERO */
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1s ease-in forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+  
+/*
+    Gallery CONTENTS
+
+*/
+
+
+/*
+    DIV HERO
+
+*/
+
+.div-hero{
+    height: 650PX;
+    background-color: #000000;
+    background-image: url('Images/menu-bg.png'); /* Background image */
+    background-size: auto 140%; /* Cover the entire background area */
+    background-position: center; /* Center the background image */
+}
+
+.div-Hero-Intro-Text{
+    font-family: 'font-Poller', sans-serif;
+    font-size: 100px;
+    color:white;
+    margin-top: 280px;
+    text-align: right;
+    text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/*
+    DIV Menu
+
+*/
+
+.div-menu{
+    background-color: #000000;
+    background-image: url('Images/rh2.png'); /* Background image */
+    background-size: auto 50%; /* Cover the entire background area */
+    background-position: center; /* Center the background image */
+    background-repeat: repeat-y; /* Prevents the background image from repeating */
+    margin: 0; /* Reset default margin */
+    height: auto; /* Height will adjust based on content */
+    margin-top: 0px; /* Keeps the top margin as 0 */
+    padding: 10px; /* Optional: Adding padding for better spacing inside the div */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+.div-menu-contents{
+    height: 700px;
+    margin: 5px;
+    background-size: auto 105%; /* Cover the entire background area */
+    background-position: center; /* Center the background image */
+}
+
+.div-counter{
+    height: 820PX;
+    background-size: auto 50%;
+    background-color: #000000;
+}
+
+.div-counter-contents{
+    height: 820px;
+    margin-top: 30px;
+    background-size: auto 120%;
+    background-position: center;
+}
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+
+    .div-hero {
+        height: 250px; /* Adjusted height for smaller screens */
+        background-color: #000000;
+        background-image: url('Images/menu-bg.png');
+        background-size: auto 180%; /* Adjusted background size */
+        background-position: center;
+    }
+
+    .div-Hero-Intro-Text {
+        font-family: 'font-Poller', sans-serif;
+        font-size: 30px; /* Adjusted font size */
+        color: white;
+        margin-top: 150px; /* Adjusted margin-top */
+        text-align: center; /* Center align text for smaller screens */
+        text-shadow: 3px 1px 3px rgba(0, 0, 0, 0.5); /* Adjusted text shadow */
+    }
+
+    .div-menu {
+        background-color: #000000;
+        background-image: url('Images/rh2.png');
+        background-size: auto 90%; /* Adjusted background size */
+        background-position: center;
+        background-repeat: repeat-y;
+        margin: 0;
+        height: auto;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .div-menu-contents {
+        height: 200px; 
+        margin: 5px;
+        background-size: auto 110%;
+        background-position: center;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+ 
+    .div-hero{
+        height: 350PX;
+        background-color: #000000;
+        background-image: url('Images/menu-bg.png'); /* Background image */
+        background-size: auto 140%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+
+    .div-Hero-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 40px;
+        color:white;
+        margin-top: 200px;
+        text-align: right;
+        text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .div-menu{
+        background-color: #000000;
+        background-image: url('Images/rh2.png'); /* Background image */
+        background-size: auto 50%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        background-repeat: repeat-y; /* Prevents the background image from repeating */
+        margin: 0; /* Reset default margin */
+        height: auto; /* Height will adjust based on content */
+        margin-top: 0px; /* Keeps the top margin as 0 */
+        padding: 10px; /* Optional: Adding padding for better spacing inside the div */
+        box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    }
+
+    .div-menu-contents{
+        height: 300px;
+        margin: 5px;
+        background-size: auto 95%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+}
+ 
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .div-hero{
+        height: 450PX;
+        background-color: #000000;
+        background-image: url('Images/menu-bg.png'); /* Background image */
+        background-size: auto 140%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+
+    .div-Hero-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 50px;
+        color:white;
+        margin-top: 250px;
+        text-align: right;
+        text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .div-menu{
+        background-color: #000000;
+        background-image: url('Images/rh2.png'); /* Background image */
+        background-size: auto 50%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        background-repeat: repeat-y; /* Prevents the background image from repeating */
+        margin: 0; /* Reset default margin */
+        height: auto; /* Height will adjust based on content */
+        margin-top: 0px; /* Keeps the top margin as 0 */
+        padding: 10px; /* Optional: Adding padding for better spacing inside the div */
+        box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    }
+
+    .div-menu-contents{
+        height: 400px;
+        margin: 5px;
+        background-size: auto 96%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+}
+ 
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .div-hero{
+        height: 550PX;
+        background-color: #000000;
+        background-image: url('Images/menu-bg.png'); /* Background image */
+        background-size: auto 140%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+
+    .div-Hero-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 60px;
+        color:white;
+        margin-top: 300px;
+        text-align: right;
+        text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .div-menu{
+        background-color: #000000;
+        background-image: url('Images/rh2.png'); /* Background image */
+        background-size: auto 70%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        background-repeat: repeat-y; /* Prevents the background image from repeating */
+        margin: 0; /* Reset default margin */
+        height: auto; /* Height will adjust based on content */
+        margin-top: 0px; /* Keeps the top margin as 0 */
+        padding: 10px; /* Optional: Adding padding for better spacing inside the div */
+        box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    }
+
+    .div-menu-contents{
+        height: 500px;
+        margin: 5px;
+        background-size: auto 106%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+}
+ 
+@media (min-width: 1199.98px) and (max-width: 1299.98px) {
+    .div-hero{
+        height: 650PX;
+        background-color: #000000;
+        background-image: url('Images/menu-bg.png'); /* Background image */
+        background-size: auto 140%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+
+    .div-Hero-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 80px;
+        color:white;
+        margin-top: 350px;
+        text-align: right;
+        text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .div-menu{
+        background-color: #000000;
+        background-image: url('Images/rh2.png'); /* Background image */
+        background-size: auto 70%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        background-repeat: repeat-y; /* Prevents the background image from repeating */
+        margin: 0; /* Reset default margin */
+        height: auto; /* Height will adjust based on content */
+        margin-top: 0px; /* Keeps the top margin as 0 */
+        padding: 10px; /* Optional: Adding padding for better spacing inside the div */
+        box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    }
+
+    .div-menu-contents{
+        height: 600px;
+        margin: 5px;
+        background-size: auto 106%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+}
+ 
+@media (min-width: 1300.98px) and (max-width: 1500.98px){
+    .div-hero{
+        height: 650PX;
+        background-color: #000000;
+        background-image: url('Images/menu-bg.png'); /* Background image */
+        background-size: auto 140%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+
+    .div-Hero-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 80px;
+        color:white;
+        margin-top: 350px;
+        text-align: right;
+        text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .div-menu{
+        background-color: #000000;
+        background-image: url('Images/rh2.png'); /* Background image */
+        background-size: auto 70%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        background-repeat: repeat-y; /* Prevents the background image from repeating */
+        margin: 0; /* Reset default margin */
+        height: auto; /* Height will adjust based on content */
+        margin-top: 0px; /* Keeps the top margin as 0 */
+        padding: 10px; /* Optional: Adding padding for better spacing inside the div */
+        box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    }
+
+    .div-menu-contents{
+        height: 700px;
+        margin: 5px;
+        background-size: auto 106%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+}

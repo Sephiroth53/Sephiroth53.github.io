@@ -1,0 +1,712 @@
+@font-face {
+  font-family: 'font-Bitter';
+  src: url('fonts/Bitter-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.back-to-top-btn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 40px; /* Place the button at the bottom of the page */
+  right: 40px; /* Place the button 40px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #A40B0B; /* Set a red background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7); /* Add shadow */
+}
+
+.back-to-top-btn:hover {
+  background-color: #cc0000; /* Add a darker red background on hover */
+}
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.navbar a:hover{
+  color: #FBDC6A;
+}
+
+
+.custom-logo, .spacing {
+  margin-left: 20px; 
+}
+
+.nav-link {
+  margin-left: 120px; 
+  font-family: "source-serif-pro", serif;
+  color: white;
+  position: relative;
+}
+
+#navbar {
+  background-color: #333;
+  padding: 10px 0;
+  color: #fff;
+  text-align: center;
+  transition: top 0.3s;
+  /* Additional styles for your navbar */
+}
+
+.navbar-scroll {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  /* Additional styles for the fixed navbar */
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #333; 
+}
+
+body {
+    padding-top: 60px; 
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: auto; /* Set the fixed height of the footer here */
+}
+
+.footer-title{
+  font-family: "Poller One", serif;
+  font-size: 36px;
+  margin-top: 20px;
+}
+
+.footer-text-content{
+  margin-top: 30px;
+  font-family: "font-Bitter", serif;
+  font-size: 14px;
+}
+
+.column-spacing-1{
+  padding-left: 215px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.column-spacing-2{
+  padding-left: 190px;
+  margin-top: 20px;
+  text-align: left;
+
+}
+
+hr{
+  border: 50;
+  background-color: white;
+  height: 2px;
+  width: 100%;
+  size: 2;
+  line-height: 80%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+.footer-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: -10px;
+}
+.footer-icon-container a {
+  margin-right: 20px; 
+  margin-top: -20px;
+}
+
+.copyright{
+  margin-top: -50px;
+}
+
+.large-space {
+  margin-right: 865px; 
+}
+
+.content-margin-left{
+  margin-left: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+  footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: auto; /* Set the fixed height of the footer here */
+  }
+
+  .footer-title {
+    font-family: "Poller One", serif;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .footer-text-content {
+    margin-top: 8px;
+    font-family: "font-Bitter", serif;
+    font-size: 10px;
+  }
+
+  .column-spacing-1 {
+    padding-left: 15px;
+    margin-top: -10px;
+    text-align: left;
+    display: none;
+  }
+
+  .column-spacing-2 {
+    padding-left: 15px;
+    margin-top: 10px;
+    text-align: left;
+    display: none;
+  }
+
+  hr {
+    border: 0;
+    background-color: white;
+    height: 1px;
+    width: 100%;
+    line-height: 80%;
+  }
+
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .footer-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: -5px;
+  }
+
+  .footer-icon-container a {
+    margin-right: 10px;
+    margin-top: -10px;
+  }
+
+  .copyright {
+    margin-top: -25px;
+  }
+
+  .large-space {
+    margin-right: 160px;
+    font-size: 8px;
+  }
+
+  .content-margin-left {
+    margin-left: 5px;
+    font-size: 8px;
+  }
+
+  body {
+    padding-top: 30px;
+  }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    footer {
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      height: auto; /* Set the fixed height of the footer here */
+    }
+    
+    .footer-title{
+      font-family: "Poller One", serif;
+      font-size: 30px;
+      margin-top: 20px;
+    }
+    
+    .footer-text-content{
+      margin-top: 12px;
+      font-family: "font-Bitter", serif;
+      font-size: 14px;
+    }
+    
+    .column-spacing-1{
+      padding-left: 30px;
+      margin-top: -20px;
+      text-align: left;
+      display: none;
+    }
+    
+    .column-spacing-2{
+      padding-left: 30px;
+      margin-top: 20px;
+      text-align: left;
+      display: none;
+    }
+    
+    hr{
+      border: 50;
+      background-color: white;
+      height: 2px;
+      width: 100%;
+      size: 2;
+      line-height: 80%;
+    }
+    
+    /* Add a hover effect if you want */
+    .fa:hover {
+      opacity: 0.7;
+    }
+    
+    .footer-icon-container {
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      margin-bottom: -10px;
+    }
+    .footer-icon-container a {
+      margin-right: 20px; 
+      margin-top: -20px;
+    }
+    
+    .copyright{
+      margin-top: -50px;
+    }
+    
+    .large-space {
+      margin-right: 185px; 
+      font-size: 12px;
+    }
+    
+    .content-margin-left{
+      margin-left: 10px;
+      font-size: 12px;
+    }
+
+    body {
+      padding-top: 60px; 
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: auto; /* Set the fixed height of the footer here */
+  }
+  
+  .footer-title{
+    font-family: "Poller One", serif;
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  
+  .footer-text-content{
+    margin-top: 20px;
+    font-family: "font-Bitter", serif;
+    font-size: 14px;
+  }
+  
+  .column-spacing-1{
+    padding-left: 30px;
+    margin-top: -20px;
+    text-align: left;
+    display: none;
+  }
+  
+  .column-spacing-2{
+    padding-left: 30px;
+    margin-top: 20px;
+    text-align: left;
+    display: none;
+  }
+  
+  hr{
+    border: 50;
+    background-color: white;
+    height: 2px;
+    width: 100%;
+    size: 2;
+    line-height: 80%;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  .footer-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: -10px;
+  }
+  .footer-icon-container a {
+    margin-right: 20px; 
+    margin-top: -20px;
+  }
+  
+  .copyright{
+    margin-top: -50px;
+  }
+  
+  .large-space {
+    margin-right: 360px; 
+    font-size: 12px;
+  }
+  
+  .content-margin-left{
+    margin-left: 10px;
+    font-size: 12px;
+  }
+
+  body {
+    padding-top: 60px; 
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  
+  .nav-link {
+    margin-left: 65px; 
+    font-family: "source-serif-pro", serif;
+    color: white;
+    position: relative;
+  }
+
+  footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: auto; /* Set the fixed height of the footer here */
+  }
+  
+  .footer-title{
+    font-family: "Poller One", serif;
+    font-size: 35px;
+    margin-top: 20px;
+  }
+  
+  .footer-text-content{
+    margin-top: 30px;
+    font-family: "font-Bitter", serif;
+    font-size: 14px;
+  }
+  
+  .column-spacing-1{
+    padding-left: 80px;
+    margin-top: -20px;
+    text-align: left;
+  }
+  
+  .column-spacing-2{
+    padding-left: 80px;
+    margin-top: -20px;
+    text-align: left;
+  }
+  
+  hr{
+    border: 50;
+    background-color: white;
+    height: 2px;
+    width: 100%;
+    size: 2;
+    line-height: 80%;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  .footer-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: -10px;
+  }
+  .footer-icon-container a {
+    margin-right: 20px; 
+    margin-top: -20px;
+  }
+  
+  .copyright{
+    margin-top: -50px;
+  }
+  
+  .large-space {
+    margin-right: 565px; 
+    font-size: 14px;
+  }
+  
+  .content-margin-left{
+    margin-left: 10px;
+    font-size: 14px;
+  }
+
+  body {
+    padding-top: 60px; 
+}
+
+}
+@media (min-width: 1200px) and (max-width: 1300.98px) {
+    .nav-link {
+      margin-left: 95px; 
+      font-family: "source-serif-pro", serif;
+      color: white;
+      position: relative;
+    }
+    
+    footer {
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      height: auto; /* Set the fixed height of the footer here */
+    }
+    
+    .footer-title{
+      font-family: "Poller One", serif;
+      font-size: 35px;
+      margin-top: 20px;
+    }
+    
+    .footer-text-content{
+      margin-top: 30px;
+      font-family: "font-Bitter", serif;
+      font-size: 14px;
+    }
+    
+    .column-spacing-1{
+      padding-left: 100px;
+      margin-top: -20px;
+      text-align: left;
+    }
+    
+    .column-spacing-2{
+      padding-left: 90px;
+      margin-top: -20px;
+      text-align: left;
+    }
+    
+    hr{
+      border: 50;
+      background-color: white;
+      height: 2px;
+      width: 100%;
+      size: 2;
+      line-height: 80%;
+    }
+    
+    /* Add a hover effect if you want */
+    .fa:hover {
+      opacity: 0.7;
+    }
+    
+    .footer-icon-container {
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      margin-bottom: -10px;
+    }
+    .footer-icon-container a {
+      margin-right: 20px; 
+      margin-top: -20px;
+    }
+    
+    .copyright{
+      margin-top: -50px;
+    }
+    
+    .large-space {
+      margin-right: 740px; 
+      font-size: 14px;
+    }
+    
+    .content-margin-left{
+      margin-left: 10px;
+      font-size: 14px;
+    }
+
+    body {
+      padding-top: 60px; 
+  }
+
+}
+@media (min-width: 1300px) and (max-width: 1400.98px) {
+  .nav-link {
+    margin-left: 95px; 
+    font-family: "source-serif-pro", serif;
+    color: white;
+    position: relative;
+  }
+
+  footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: auto; /* Set the fixed height of the footer here */
+  }
+  
+  .footer-title{
+    font-family: "Poller One", serif;
+    font-size: 35px;
+    margin-top: 20px;
+  }
+  
+  .footer-text-content{
+    margin-top: 30px;
+    font-family: "font-Bitter", serif;
+    font-size: 14px;
+  }
+  
+  .column-spacing-1{
+    padding-left: 80px;
+    margin-top: -20px;
+    text-align: left;
+  }
+  
+  .column-spacing-2{
+    padding-left: 80px;
+    margin-top: -20px;
+    text-align: left;
+  }
+  
+  hr{
+    border: 50;
+    background-color: white;
+    height: 2px;
+    width: 100%;
+    size: 2;
+    line-height: 80%;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  .footer-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: -10px;
+  }
+  .footer-icon-container a {
+    margin-right: 20px; 
+    margin-top: -20px;
+  }
+  
+  .copyright{
+    margin-top: -50px;
+  }
+  
+  .large-space {
+    margin-right: 700px; 
+    font-size: 16px;
+  }
+  
+  .content-margin-left{
+    margin-left: 10px;
+    font-size: 16px;
+  }
+
+  body {
+    padding-top: 60px; 
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1500.98px) {
+  footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: auto; /* Set the fixed height of the footer here */
+  }
+  
+  .footer-title{
+    font-family: "Poller One", serif;
+    font-size: 35px;
+    margin-top: 20px;
+  }
+  
+  .footer-text-content{
+    margin-top: 30px;
+    font-family: "font-Bitter", serif;
+    font-size: 14px;
+  }
+  
+  .column-spacing-1{
+    padding-left: 100px;
+    margin-top: -20px;
+    text-align: left;
+  }
+  
+  .column-spacing-2{
+    padding-left: 85px;
+    margin-top: -20px;
+    text-align: left;
+  }
+  
+  hr{
+    border: 50;
+    background-color: white;
+    height: 2px;
+    width: 100%;
+    size: 2;
+    line-height: 80%;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  .footer-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: -10px;
+  }
+  .footer-icon-container a {
+    margin-right: 20px; 
+    margin-top: -20px;
+  }
+  
+  .copyright{
+    margin-top: -50px;
+  }
+  
+  .large-space {
+    margin-right: 885px; 
+    font-size: 16px;
+  }
+  
+  .content-margin-left{
+    margin-left: 10px;
+    font-size: 16px;
+  }
+
+  body {
+    padding-top: 60px; 
+}
+}
+

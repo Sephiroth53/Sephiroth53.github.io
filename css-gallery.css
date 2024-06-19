@@ -1,0 +1,328 @@
+@font-face {
+    font-family: 'font-Poller';
+    src: url('fonts/PollerOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font-Bitter';
+    src: url('fonts/Bitter-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font-Bitter-Light';
+    src: url('fonts/Bitter-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font-Bitter-SemiBold';
+    src: url('fonts/Bitter-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font-SourceSerifPro';
+    src: url('fonts/s') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #000000;
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+    
+}
+
+/* FOR FADE IN ANIMATION OF DIV HERO */
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1s ease-in forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+/*
+    Gallery CONTENTS
+
+*/
+
+
+/*
+    DIV HERO
+
+*/
+
+.div-hero{
+    height: 650PX;
+    background-color: #000000;
+    background-image: url('Images/gallery-bg.jpg'); /* Background image */
+    background-size: auto 130%; /* Cover the entire background area */
+    background-position: center; /* Center the background image */
+}
+
+.div-Hero-Intro-Text{
+    font-family: 'font-Poller', sans-serif;
+    font-size: 100px;
+    color:white;
+    margin-top: 280px;
+    text-align: right;
+    text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/*
+    DIV RH GALLERY
+
+*/
+
+.div-rh-gallery{
+    height: auto; /* Height will adjust based on content */
+    background-color: #000000; /* Background color */
+    margin-top: 0px; /* Keeps the top margin as 0 */
+    padding: 10px; /* Optional: Adding padding for better spacing inside the div */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+.div-Title-Text{
+    font-family: 'font-Poller', sans-serif;
+    font-size: 120px;
+    color: #FBDC6A;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.div-Body-Text{
+    font-family: 'font-Bitter', sans-serif;
+    font-size: 22px;
+    color:white;
+    text-align: center;
+}
+
+.div-padding{
+    padding-top: 100px;
+}
+.div-rh-gallery .image {
+    display: block;
+    width: 100%; /* Make the image take the full width of its container */
+    height: 600px; /* Set the height to 600 pixels */
+    overflow: hidden; /* Hide any overflow */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+    object-position: center; /* Center the image within the container */
+    cursor: pointer;
+    margin: 5px;
+}
+
+.thumbnail {
+    position: relative;
+    overflow: hidden; /* Ensure that overflow is hidden to hide the parts of the overlay */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Add background color for visibility */
+    transition: .5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caption {
+    font-family: 'font-Bitter', sans-serif;
+    font-size: 2rem; /* Corrected to a valid unit */
+    color: #FBDC6A; /* Ensure the text is visible */
+    text-align: center;
+}
+
+.thumbnail:hover {
+    transform: translateY(-4px);
+}
+
+.thumbnail:hover .overlay {
+    opacity: 1;
+}
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+
+    .div-hero {
+        height: 250px;
+        background-color: #000;
+        background-image: url('Images/gallery-bg.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .div-Hero-Intro-Text {
+        font-family: 'font-Poller', sans-serif;
+        font-size: 28px;
+        color: white;
+        margin-top: 120px;
+        text-align: right;
+        text-shadow: 4px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .div-Title-Text {
+        font-family: 'font-Poller', sans-serif;
+        font-size: 40px;
+        color: #FBDC6A;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .div-hero{
+        height: 350PX;
+        background-color: #000000;
+        background-image: url('Images/gallery-bg.jpg'); /* Background image */
+        background-size: auto 130%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+    
+    .div-Hero-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 40px;
+        color:white;
+        margin-top: 200px;
+        text-align: right;
+        text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .div-Title-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 50px;
+        color: #FBDC6A;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+ 
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .div-hero{
+        height: 450PX;
+        background-color: #000000;
+        background-image: url('Images/gallery-bg.jpg'); /* Background image */
+        background-size: auto 130%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+    
+    .div-Hero-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 50px;
+        color:white;
+        margin-top: 250px;
+        text-align: right;
+        text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .div-Title-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 70px;
+        color: #FBDC6A;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+ 
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .div-hero{
+        height: 550PX;
+        background-color: #000000;
+        background-image: url('Images/gallery-bg.jpg'); /* Background image */
+        background-size: auto 130%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+    
+    .div-Hero-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 60px;
+        color:white;
+        margin-top: 300px;
+        text-align: right;
+        text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .div-Title-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 90px;
+        color: #FBDC6A;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+ 
+@media (min-width: 1199.98px) and (max-width: 1299.98px) {
+    .div-hero{
+        height: 650PX;
+        background-color: #000000;
+        background-image: url('Images/gallery-bg.jpg'); /* Background image */
+        background-size: auto 130%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+    
+    .div-Hero-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 80px;
+        color:white;
+        margin-top: 350px;
+        text-align: right;
+        text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .div-Title-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 110px;
+        color: #FBDC6A;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+ 
+ 
+@media (min-width: 1300.98px) and (max-width: 1500.98px){
+    .div-hero{
+        height: 650PX;
+        background-color: #000000;
+        background-image: url('Images/gallery-bg.jpg'); /* Background image */
+        background-size: auto 130%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+    
+    .div-Hero-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 80px;
+        color:white;
+        margin-top: 350px;
+        text-align: right;
+        text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .div-Title-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 130px;
+        color: #FBDC6A;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}

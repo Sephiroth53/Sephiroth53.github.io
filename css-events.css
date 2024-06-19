@@ -1,0 +1,1468 @@
+@font-face {
+    font-family: 'font-Poller';
+    src: url('fonts/PollerOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font-Bitter';
+    src: url('fonts/Bitter-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font-Bitter-Light';
+    src: url('fonts/Bitter-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font-Bitter-SemiBold';
+    src: url('fonts/Bitter-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font-SourceSerifPro';
+    src: url('fonts/s') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #000000;
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+    
+}
+
+/* FOR FADE IN ANIMATION OF DIV HERO */
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1s ease-in forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+
+/*
+    Gallery CONTENTS
+
+*/
+
+
+/*
+    DIV HERO
+
+*/
+
+.div-hero{
+    height: 650PX;
+    background-color: #000000;
+    background-image: url('Images/event-bg.jpg'); /* Background image */
+    background-size: auto 130%; /* Cover the entire background area */
+    background-position: center; /* Center the background image */
+}
+
+.div-Hero-Intro-Text{
+    font-family: 'font-Poller', sans-serif;
+    font-size: 100px;
+    color:white;
+    margin-top: 280px;
+    text-align: right;
+    text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/*
+    DIV UPCOMING EVENT
+*/
+
+
+.div-upcEvent{
+    height: 1400px;
+    text-align: center;
+    padding: 20px;
+    background-color: #490303;
+    background-image: url('Images/rh.png'); /* Background image */
+    background-size: auto 100%; /* Cover the entire background area */
+    background-position: center; /* Center the background image */
+    
+}
+
+.div-ucpEvent-IntroText{
+    font-family: 'font-Poller', sans-serif;
+    font-size: 120px;
+    color: #FBDC6A;
+    margin-top: 80px;
+}
+
+.div-ucpEvent-Body-1{
+    font-family: 'font-Bitter-SemiBold', sans-serif;
+    font-size: 32px;
+    color: white;
+    margin-top: 20px;
+}
+
+.div-ucpEvent-Margin{
+    margin-top: 80px;
+}
+
+.div-ucpEvent-ImageSize{
+    width: auto;
+    height: 800px;
+}
+
+.div-ucpEvent-CardFont-Date{
+    font-family: 'font-Poller', sans-serif;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 30px;
+    color: #FBDC6A;
+}
+
+.div-ucpEvent-CardFont-Title{
+    font-family: 'font-Poller', sans-serif;
+    font-size: 28px;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #A40B0B;
+}
+
+.div-ucpEvent-CardFont-Paragraph{
+    font-family: 'font-Bitter-Light', sans-serif;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.div-ucpEvent-CardFont-Paragraph2{
+    font-family: 'font-Bitter-SemiBold', sans-serif;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 0px;
+    color: #FBDC6A;
+}
+
+.div-ucpEvent-Card {
+    background-color: transparent; /* Remove background */
+    border: none; /* Optional: remove border */
+    height: 800px;
+    transition: background-color 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative; /* Required for absolute positioning of contents */
+}
+
+.div-Card-Contents{
+    position: absolute; /* Position contents absolutely within the card */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    color: white;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+    padding-top: 350px; /* Add some padding */
+    display: flex;
+    flex-direction: column;
+    justify-content:center; /* Center contents vertically */
+    align-items: flex-start; /* Align contents to the left */
+
+}
+
+.div-ucpEvent-Card img {
+    transition: transform 0.3s ease; /* Smooth transition for image */
+}
+
+.div-ucpEvent-Card:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Dim the card on hover */
+    transform: scale(1.02); /* Slightly scale up the card on hover for effect */
+}
+
+.div-ucpEvent-Card:hover .div-Card-Contents {
+    opacity: 1; /* Show the contents on hover */
+}
+
+.div-ucpEvent-Card h3 {
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background color and text color */
+}
+
+.div-ucpEvent-Card:hover h3 {
+    color: #F20202; /* Change text color for better contrast */
+}
+
+
+/*
+    DIV Past Events
+*/
+
+.div-pstEvent{
+    height: 1300px;
+    background-color: black;
+    background-image: url('Images/past-events-bg.png'); /* Background image */
+    background-size: auto 110%; /* Cover the entire background area */
+    background-position: center; /* Center the background image */
+    padding-top: 100px;
+    text-align: center;
+    padding: 20px;
+}
+
+.div-pstEvent-custom-bg{
+    background-color: rgba(164, 11, 11, 0);
+}
+
+.div-pstEvent-marginTop{
+    margin-top: 70px;
+}
+
+.div-pstEvent-content-height{
+    height: 750px;
+}
+
+.div-pstEvent-center{
+    align-self: center;
+}
+
+.div-alignment{
+    align-content: center;
+    vertical-align: middle;
+}
+
+.div-pstEvent-IntroText{
+    font-family: 'font-Poller', sans-serif;
+    font-size: 120px;
+    margin-top: 60px;
+    color: #FBDC6A;
+}
+
+.div-pstEvent-font-bitter-semibold{
+    font-family: 'font-Bitter-SemiBold', sans-serif;
+    font-size: 32px;
+}
+
+.div-pstEvent-button{
+    margin-top: 120px;
+    align-self:flex-end;
+    width: auto;
+    border-color: #FBDC6A;
+    color: #FBDC6A;
+}
+
+.div-pstEvent-button-container {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: flex-end; /* Align items at the bottom */
+    height: 100%; /* Take full height of the parent container */
+}
+
+.div-pstEvent-pointer {
+    cursor: pointer;
+}
+
+.img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-item {
+    height: 800px; /* Ensure the carousel item takes up the full height of the container */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire carousel item */
+}
+
+
+/*
+    BOOK EVENT
+*/
+
+.div-Book-Event{
+    height: 500px;
+    background-color:#410135;
+    background-image: url('Images/rh2.png'); /* Background image */
+    background-size: auto 200%; /* Cover the entire background area */
+    background-position: center; /* Center the background image */
+    padding-top: 100px;
+    padding: 20px;
+}
+
+.div-Book-Event-Intro-Text{
+    font-family: 'font-Poller', sans-serif;
+    font-size: 72px;
+    color:#FBDC6A;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.div-Book-Event-font-bitter-semibold{
+    font-family: 'font-Bitter-SemiBold', sans-serif;
+    font-size: 20px;
+}
+
+.div-Book-Event-button-container{
+    display: flex;
+    justify-content:center; /* Align items to the right */
+    align-items: flex-end; /* Align items at the bottom */
+}
+
+.div-Book-Event-button{
+    margin-top: 20px;
+    width: auto;
+    color:#A40B0B; 
+    background-color: white; 
+    border: none; 
+    width: 200px;
+}
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+
+    .div-hero {
+        height: 250px;
+        background-color: #000;
+        background-image: url('Images/event-bg.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .div-Hero-Intro-Text {
+        font-family: 'font-Poller', sans-serif;
+        font-size: 28px;
+        color: white;
+        margin-top: 120px;
+        text-align: right;
+        text-shadow: 4px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .div-upcEvent {
+        height: 500px;
+        text-align: center;
+        padding: 10px;
+        background-color: #490303;
+        background-image: url('Images/rh.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .div-ucpEvent-IntroText {
+        font-family: 'font-Poller', sans-serif;
+        font-size: 30px;
+        color: #FBDC6A;
+        margin-top: 60px;
+    }
+
+    .div-ucpEvent-Body-1 {
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 10px;
+        color: white;
+        margin-top: 15px;
+    }
+
+    .div-ucpEvent-Margin {
+        margin-top: 30px;
+    }
+
+    .div-ucpEvent-ImageSize {
+        width: auto;
+        height: 250px;
+    }
+
+    .div-ucpEvent-CardFont-Date {
+        font-family: 'font-Poller', sans-serif;
+        font-size: 8px;
+        text-align: left;
+        margin-left: 15px;
+        margin-top: 20px;
+        color: #FBDC6A;
+    }
+
+    .div-ucpEvent-CardFont-Title {
+        font-family: 'font-Poller', sans-serif;
+        font-size: 14px;
+        text-align: left;
+        margin-left: 15px;
+        margin-top: 3px;
+        margin-bottom: 8px;
+        color: #A40B0B;
+    }
+
+    .div-ucpEvent-CardFont-Paragraph {
+        font-family: 'font-Bitter-Light', sans-serif;
+        font-size: 6px;
+        text-align: left;
+        margin-left: 15px;
+        margin-top: 0;
+        margin-bottom: 15px;
+        color: white;
+    }
+
+    .div-ucpEvent-CardFont-Paragraph2 {
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 6px;
+        text-align: left;
+        margin-left: 15px;
+        margin-top: 0;
+        color: #FBDC6A;
+    }
+
+    .div-ucpEvent-Card {
+        background-color: transparent;
+        border: none;
+        height: 250px;
+        transition: background-color 0.3s ease;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .div-Card-Contents {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        padding-top: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .div-pstEvent {
+        height: 500px;
+        background-color: black;
+        background-image: url('Images/past-events-bg.png');
+        background-size: cover;
+        background-position: center;
+        padding-top: 80px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .div-pstEvent-custom-bg {
+        background-color: rgba(164, 11, 11, 0);
+    }
+
+    .div-pstEvent-marginTop {
+        margin-top: 50px;
+    }
+
+    .div-pstEvent-content-height {
+        height: 200px;
+    }
+
+    .div-pstEvent-IntroText {
+        font-family: 'font-Poller', sans-serif;
+        font-size: 30px;
+        margin-top: 40px;
+        color: #FBDC6A;
+    }
+
+    .carousel-item {
+        height: 250px;
+    }
+
+    .div-Book-Event {
+        height: 180px;
+        background-color: #410135;
+        background-image: url('Images/rh2.png');
+        background-size: cover;
+        background-position: center;
+        padding-top: 80px;
+        padding: 10px;
+    }
+
+    .div-Book-Event-Intro-Text {
+        font-family: 'font-Poller', sans-serif;
+        font-size: 24px;
+        color: #FBDC6A;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .div-Book-Event-font-bitter-semibold {
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 8px;
+    }
+
+    .div-Book-Event-button {
+        margin-top: 15px;
+        width: 100px;
+        color: #A40B0B;
+        background-color: white;
+        border: none;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+ 
+    
+    .div-hero{
+        height: 350PX;
+        background-color: #000000;
+        background-image: url('Images/event-bg.jpg'); /* Background image */
+        background-size: auto 130%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+
+    .div-Hero-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 40px;
+        color:white;
+        margin-top: 200px;
+        text-align: right;
+        text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    /*
+        DIV UPCOMING EVENT
+    */
+
+
+    .div-upcEvent{
+        height: 700px;
+        text-align: center;
+        padding: 20px;
+        background-color: #490303;
+        background-image: url('Images/rh.png'); /* Background image */
+        background-size: auto 100%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        
+    }
+
+    .div-ucpEvent-IntroText{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 45px;
+        color: #FBDC6A;
+        margin-top: 80px;
+    }
+
+    .div-ucpEvent-Body-1{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 12px;
+        color: white;
+        margin-top: 20px;
+    }
+
+    .div-ucpEvent-Margin{
+        margin-top: 40px;
+    }
+
+    .div-ucpEvent-ImageSize{
+        width: auto;
+        height: 300px;
+    }
+
+    .div-ucpEvent-CardFont-Date{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 10px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 30px;
+        color: #FBDC6A;
+    }
+
+    .div-ucpEvent-CardFont-Title{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 16px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        color: #A40B0B;
+    }
+
+    .div-ucpEvent-CardFont-Paragraph{
+        font-family: 'font-Bitter-Light', sans-serif;
+        font-size: 8px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    .div-ucpEvent-CardFont-Paragraph2{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 8px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 0px;
+        color: #FBDC6A;
+    }
+
+    .div-ucpEvent-Card {
+        background-color: transparent; /* Remove background */
+        border: none; /* Optional: remove border */
+        height: 300px;
+        transition: background-color 0.3s ease;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative; /* Required for absolute positioning of contents */
+    }
+
+    .div-Card-Contents{
+        position: absolute; /* Position contents absolutely within the card */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+        color: white;
+        opacity: 0; /* Initially hidden */
+        transition: opacity 0.3s ease;
+        padding-top: 90px; /* Add some padding */
+        display: flex;
+        flex-direction: column;
+        justify-content:center; /* Center contents vertically */
+        align-items: flex-start; /* Align contents to the left */
+
+    }
+
+    .div-pstEvent{
+        height: 600px;
+        background-color: black;
+        background-image: url('Images/past-events-bg.png'); /* Background image */
+        background-size: auto 120%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        padding-top: 100px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .div-pstEvent-custom-bg{
+        background-color: rgba(164, 11, 11, 0);
+    }
+
+    .div-pstEvent-marginTop{
+        margin-top: 70px;
+    }
+
+    .div-pstEvent-content-height{
+        height: 300px;
+    }
+
+    .div-pstEvent-IntroText{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 45px;
+        margin-top: 60px;
+        color: #FBDC6A;
+    }
+
+
+    .carousel-item {
+        height: 300px; /* Ensure the carousel item takes up the full height of the container */
+    }
+
+
+    .div-Book-Event{
+        height: 200px;
+        background-color:#410135;
+        background-image: url('Images/rh2.png'); /* Background image */
+        background-size: auto 200%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        padding-top: 100px;
+        padding: 20px;
+    }
+
+    .div-Book-Event-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 30px;
+        color:#FBDC6A;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .div-Book-Event-font-bitter-semibold{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 10px;
+    }
+
+    .div-Book-Event-button{
+        margin-top: 20px;
+        width: auto;
+        color:#A40B0B; 
+        background-color: white; 
+        border: none; 
+        width: 80px;
+    }
+
+}
+ 
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .div-hero{
+        height: 450PX;
+        background-color: #000000;
+        background-image: url('Images/event-bg.jpg'); /* Background image */
+        background-size: auto 130%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+
+    .div-Hero-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 50px;
+        color:white;
+        margin-top: 250px;
+        text-align: right;
+        text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    
+
+    .div-upcEvent{
+        height: 800px;
+        text-align: center;
+        padding: 20px;
+        background-color: #490303;
+        background-image: url('Images/rh.png'); /* Background image */
+        background-size: auto 100%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        
+    }
+
+    .div-ucpEvent-IntroText{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 65px;
+        color: #FBDC6A;
+        margin-top: 80px;
+    }
+
+    .div-ucpEvent-Body-1{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 18px;
+        color: white;
+        margin-top: 20px;
+    }
+
+    .div-ucpEvent-Margin{
+        margin-top: 40px;
+    }
+
+    .div-ucpEvent-ImageSize{
+        width: auto;
+        height: 400px;
+    }
+
+    .div-ucpEvent-CardFont-Date{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 12px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 30px;
+        color: #FBDC6A;
+    }
+
+    .div-ucpEvent-CardFont-Title{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 18px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        color: #A40B0B;
+    }
+
+    .div-ucpEvent-CardFont-Paragraph{
+        font-family: 'font-Bitter-Light', sans-serif;
+        font-size: 10px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    .div-ucpEvent-CardFont-Paragraph2{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 10px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 0px;
+        color: #FBDC6A;
+    }
+
+    .div-ucpEvent-Card {
+        background-color: transparent; /* Remove background */
+        border: none; /* Optional: remove border */
+        height: 400px;
+        transition: background-color 0.3s ease;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative; /* Required for absolute positioning of contents */
+    }
+
+    .div-Card-Contents{
+        position: absolute; /* Position contents absolutely within the card */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+        color: white;
+        opacity: 0; /* Initially hidden */
+        transition: opacity 0.3s ease;
+        padding-top: 90px; /* Add some padding */
+        display: flex;
+        flex-direction: column;
+        justify-content:center; /* Center contents vertically */
+        align-items: flex-start; /* Align contents to the left */
+
+    }
+
+    .div-pstEvent{
+        height: 800px;
+        background-color: black;
+        background-image: url('Images/past-events-bg.png'); /* Background image */
+        background-size: auto 120%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        padding-top: 100px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .div-pstEvent-custom-bg{
+        background-color: rgba(164, 11, 11, 0);
+    }
+
+    .div-pstEvent-marginTop{
+        margin-top: 70px;
+    }
+
+    .div-pstEvent-content-height{
+        height: 400px;
+    }
+
+    .div-pstEvent-IntroText{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 65px;
+        margin-top: 60px;
+        color: #FBDC6A;
+    }
+
+
+    .carousel-item {
+        height: 400px; /* Ensure the carousel item takes up the full height of the container */
+    }
+
+
+    .div-Book-Event{
+        height: 250px;
+        background-color:#410135;
+        background-image: url('Images/rh2.png'); /* Background image */
+        background-size: auto 200%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        padding-top: 100px;
+        padding: 20px;
+    }
+
+    .div-Book-Event-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 35px;
+        color:#FBDC6A;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .div-Book-Event-font-bitter-semibold{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 12px;
+    }
+
+    .div-Book-Event-button{
+        margin-top: 20px;
+        width: auto;
+        color:#A40B0B; 
+        background-color: white; 
+        border: none; 
+        width: 100px;
+    }
+}
+ 
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .div-hero{
+        height: 550PX;
+        background-color: #000000;
+        background-image: url('Images/event-bg.jpg'); /* Background image */
+        background-size: auto 130%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+
+    .div-Hero-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 60px;
+        color:white;
+        margin-top: 300px;
+        text-align: right;
+        text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+    
+    .div-upcEvent{
+        height: 900px;
+        text-align: center;
+        padding: 20px;
+        background-color: #490303;
+        background-image: url('Images/rh.png'); /* Background image */
+        background-size: auto 100%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        
+    }
+
+    .div-ucpEvent-IntroText{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 85px;
+        color: #FBDC6A;
+        margin-top: 70px;
+    }
+
+    .div-ucpEvent-Body-1{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 20px;
+        color: white;
+        margin-top: 20px;
+    }
+
+    .div-ucpEvent-Margin{
+        margin-top: 40px;
+    }
+
+    .div-ucpEvent-ImageSize{
+        width: auto;
+        height: 500px;
+    }
+
+    .div-ucpEvent-CardFont-Date{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 14px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 30px;
+        color: #FBDC6A;
+    }
+
+    .div-ucpEvent-CardFont-Title{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 20px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        color: #A40B0B;
+    }
+
+    .div-ucpEvent-CardFont-Paragraph{
+        font-family: 'font-Bitter-Light', sans-serif;
+        font-size: 12px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    .div-ucpEvent-CardFont-Paragraph2{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 12px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 0px;
+        color: #FBDC6A;
+    }
+
+    .div-ucpEvent-Card {
+        background-color: transparent; /* Remove background */
+        border: none; /* Optional: remove border */
+        height: 500px;
+        transition: background-color 0.3s ease;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative; /* Required for absolute positioning of contents */
+    }
+
+    .div-Card-Contents{
+        position: absolute; /* Position contents absolutely within the card */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+        color: white;
+        opacity: 0; /* Initially hidden */
+        transition: opacity 0.3s ease;
+        padding-top: 100px; /* Add some padding */
+        display: flex;
+        flex-direction: column;
+        justify-content:center; /* Center contents vertically */
+        align-items: flex-start; /* Align contents to the left */
+
+    }
+
+    .div-pstEvent{
+        height: 900px;
+        background-color: black;
+        background-image: url('Images/past-events-bg.png'); /* Background image */
+        background-size: auto 120%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        padding-top: 100px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .div-pstEvent-custom-bg{
+        background-color: rgba(164, 11, 11, 0);
+    }
+
+    .div-pstEvent-marginTop{
+        margin-top: 70px;
+    }
+
+    .div-pstEvent-content-height{
+        height: 500px;
+    }
+
+    .div-pstEvent-IntroText{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 85px;
+        margin-top: 60px;
+        color: #FBDC6A;
+    }
+
+
+    .carousel-item {
+        height: 500px; /* Ensure the carousel item takes up the full height of the container */
+    }
+
+
+    .div-Book-Event{
+        height: 300px;
+        background-color:#410135;
+        background-image: url('Images/rh2.png'); /* Background image */
+        background-size: auto 210%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        padding-top: 100px;
+        padding: 20px;
+    }
+
+    .div-Book-Event-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 55px;
+        color:#FBDC6A;
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    .div-Book-Event-font-bitter-semibold{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 14px;
+    }
+
+    .div-Book-Event-button{
+        margin-top: 20px;
+        width: auto;
+        color:#A40B0B; 
+        background-color: white; 
+        border: none; 
+        width: 120px;
+    }
+}
+ 
+@media (min-width: 1199.98px) and (max-width: 1299.98px) {
+    .div-hero{
+        height: 650PX;
+        background-color: #000000;
+        background-image: url('Images/event-bg.jpg'); /* Background image */
+        background-size: auto 130%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+
+    .div-Hero-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 80px;
+        color:white;
+        margin-top: 350px;
+        text-align: right;
+        text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .div-upcEvent{
+        height: 900px;
+        text-align: center;
+        padding: 20px;
+        background-color: #490303;
+        background-image: url('Images/rh.png'); /* Background image */
+        background-size: auto 100%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        
+    }
+
+    .div-ucpEvent-IntroText{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 85px;
+        color: #FBDC6A;
+        margin-top: 70px;
+    }
+
+    .div-ucpEvent-Body-1{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 20px;
+        color: white;
+        margin-top: 20px;
+    }
+
+    .div-ucpEvent-Margin{
+        margin-top: 40px;
+    }
+
+    .div-ucpEvent-ImageSize{
+        width: auto;
+        height: 500px;
+    }
+
+    .div-ucpEvent-CardFont-Date{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 14px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 30px;
+        color: #FBDC6A;
+    }
+
+    .div-ucpEvent-CardFont-Title{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 20px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        color: #A40B0B;
+    }
+
+    .div-ucpEvent-CardFont-Paragraph{
+        font-family: 'font-Bitter-Light', sans-serif;
+        font-size: 12px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    .div-ucpEvent-CardFont-Paragraph2{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 12px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 0px;
+        color: #FBDC6A;
+    }
+
+    .div-ucpEvent-Card {
+        background-color: transparent; /* Remove background */
+        border: none; /* Optional: remove border */
+        height: 500px;
+        transition: background-color 0.3s ease;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative; /* Required for absolute positioning of contents */
+    }
+
+    .div-Card-Contents{
+        position: absolute; /* Position contents absolutely within the card */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+        color: white;
+        opacity: 0; /* Initially hidden */
+        transition: opacity 0.3s ease;
+        padding-top: 100px; /* Add some padding */
+        display: flex;
+        flex-direction: column;
+        justify-content:center; /* Center contents vertically */
+        align-items: flex-start; /* Align contents to the left */
+
+    }
+
+    .div-pstEvent{
+        height: 900px;
+        background-color: black;
+        background-image: url('Images/past-events-bg.png'); /* Background image */
+        background-size: auto 120%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        padding-top: 100px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .div-pstEvent-custom-bg{
+        background-color: rgba(164, 11, 11, 0);
+    }
+
+    .div-pstEvent-marginTop{
+        margin-top: 70px;
+    }
+
+    .div-pstEvent-content-height{
+        height: 500px;
+    }
+
+    .div-pstEvent-IntroText{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 85px;
+        margin-top: 60px;
+        color: #FBDC6A;
+    }
+
+
+    .carousel-item {
+        height: 500px; /* Ensure the carousel item takes up the full height of the container */
+    }
+
+
+    .div-Book-Event{
+        height: 300px;
+        background-color:#410135;
+        background-image: url('Images/rh2.png'); /* Background image */
+        background-size: auto 210%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        padding-top: 100px;
+        padding: 20px;
+    }
+
+    .div-Book-Event-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 55px;
+        color:#FBDC6A;
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    .div-Book-Event-font-bitter-semibold{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 14px;
+    }
+
+    .div-Book-Event-button{
+        margin-top: 20px;
+        width: auto;
+        color:#A40B0B; 
+        background-color: white; 
+        border: none; 
+        width: 120px;
+    }
+}
+ 
+@media (min-width: 1300.98px) and (max-width: 1500.98px){
+    .div-hero{
+        height: 650PX;
+        background-color: #000000;
+        background-image: url('Images/event-bg.jpg'); /* Background image */
+        background-size: auto 130%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+
+    .div-Hero-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 80px;
+        color:white;
+        margin-top: 350px;
+        text-align: right;
+        text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .div-upcEvent{
+        height: 1100px;
+        text-align: center;
+        padding: 20px;
+        background-color: #490303;
+        background-image: url('Images/rh.png'); /* Background image */
+        background-size: auto 100%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        
+    }
+
+    .div-ucpEvent-IntroText{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 105px;
+        color: #FBDC6A;
+        margin-top: 70px;
+    }
+
+    .div-ucpEvent-Body-1{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 22px;
+        color: white;
+        margin-top: 20px;
+    }
+
+    .div-ucpEvent-Margin{
+        margin-top: 40px;
+    }
+
+    .div-ucpEvent-ImageSize{
+        width: auto;
+        height: 600px;
+    }
+
+    .div-ucpEvent-CardFont-Date{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 16px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 30px;
+        color: #FBDC6A;
+    }
+
+    .div-ucpEvent-CardFont-Title{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 22px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        color: #A40B0B;
+    }
+
+    .div-ucpEvent-CardFont-Paragraph{
+        font-family: 'font-Bitter-Light', sans-serif;
+        font-size: 14px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    .div-ucpEvent-CardFont-Paragraph2{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 14px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 0px;
+        color: #FBDC6A;
+    }
+
+    .div-ucpEvent-Card {
+        background-color: transparent; /* Remove background */
+        border: none; /* Optional: remove border */
+        height: 600px;
+        transition: background-color 0.3s ease;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative; /* Required for absolute positioning of contents */
+    }
+
+    .div-Card-Contents{
+        position: absolute; /* Position contents absolutely within the card */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+        color: white;
+        opacity: 0; /* Initially hidden */
+        transition: opacity 0.3s ease;
+        padding-top: 150px; /* Add some padding */
+        display: flex;
+        flex-direction: column;
+        justify-content:center; /* Center contents vertically */
+        align-items: flex-start; /* Align contents to the left */
+
+    }
+
+    .div-pstEvent{
+        height: 1000px;
+        background-color: black;
+        background-image: url('Images/past-events-bg.png'); /* Background image */
+        background-size: auto 120%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        padding-top: 100px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .div-pstEvent-custom-bg{
+        background-color: rgba(164, 11, 11, 0);
+    }
+
+    .div-pstEvent-marginTop{
+        margin-top: 70px;
+    }
+
+    .div-pstEvent-content-height{
+        height: 600px;
+    }
+
+    .div-pstEvent-IntroText{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 85px;
+        margin-top: 60px;
+        color: #FBDC6A;
+    }
+
+
+    .carousel-item {
+        height: 600px; /* Ensure the carousel item takes up the full height of the container */
+    }
+
+
+    .div-Book-Event{
+        height: 350px;
+        background-color:#410135;
+        background-image: url('Images/rh2.png'); /* Background image */
+        background-size: auto 210%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        padding-top: 100px;
+        padding: 20px;
+    }
+
+    .div-Book-Event-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 65px;
+        color:#FBDC6A;
+        margin-top: 70px;
+        text-align: center;
+    }
+
+    .div-Book-Event-font-bitter-semibold{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 16px;
+    }
+
+    .div-Book-Event-button{
+        margin-top: 20px;
+        width: auto;
+        color:#A40B0B; 
+        background-color: white; 
+        border: none; 
+        width: 140px;
+    }
+}

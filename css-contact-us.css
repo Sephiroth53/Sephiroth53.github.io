@@ -1,0 +1,750 @@
+/*
+    FONTS
+*/
+
+@font-face {
+    font-family: 'font-Poller';
+    src: url('fonts/PollerOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font-Bitter';
+    src: url('fonts/Bitter-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font-Bitter-Light';
+    src: url('fonts/Bitter-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font-Bitter-SemiBold';
+    src: url('fonts/Bitter-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font-SourceSerifPro';
+    src: url('fonts/s') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #A40B0B;
+    background-image: url('Images/rh.png'); /* Background image */
+    background-size: auto 30%; /* Cover the entire background area */
+    background-position: center; /* Center the background image */
+    background-repeat: repeat-y; /* Prevents the background image from repeating */
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+    
+}
+
+/* FOR FADE IN ANIMATION OF DIV HERO */
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1s ease-in forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  
+/*
+    HOMEPAGE CONTENTS
+
+*/
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Adjust as needed: space-between, space-around, etc. */
+    align-items: center; /* Adjust as needed: flex-start, flex-end, center, etc. */
+    height: 1000px; /* Set the height of the container */
+}
+
+/*
+    DIV HERO
+
+*/
+
+.div-hero{
+    height: 650PX;
+    background-color: #000000;
+    background-image: url('Images/contact-us-bg.jpg'); /* Background image */
+    background-size: auto 130%; /* Cover the entire background area */
+    background-position: center; /* Center the background image */
+}
+
+.div-Hero-Intro-Text{
+    font-family: 'font-Poller', sans-serif;
+    font-size: 100px;
+    color:white;
+    margin-top: 280px;
+    text-align: right;
+    text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/*
+    DIV CONTACT US
+
+*/
+
+.div-Contact-Us-Intro-Text{
+    font-family: 'font-Poller', sans-serif;
+    font-size: 60px;
+    color:white;
+    margin-top: 120px;
+    text-align: Left;
+    text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.div-Contact-Us-Body{
+    font-family: 'font-Bitter', sans-serif;
+    font-size: 22px;
+    color:white;
+    margin-left: 5px;
+}
+
+.div-Contact-Us-Head{
+    font-family: 'font-Poller', sans-serif;
+    font-size: 32px;
+    color:white;
+    margin-top: 40px;
+    text-align: Left;
+    text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.div-Contact-Us-UL{
+    font-family: 'font-Bitter', sans-serif;
+    font-size: 18px;
+    color: white;
+    margin-top: 10px;
+}
+.div-Contact-Us-UL li {
+    padding-bottom: 20px; /* Adjust the margin-bottom to control spacing between list items */
+    margin-left: 30px;
+}
+
+/*
+    DIV CONTACT US
+
+*/
+
+.div-map{
+    height: 1080PX;
+    background-color: #000000;
+    margin-top: 50px;
+    background-color: #131B19;
+    background-image: url('Images/rh2.png'); /* Background image */
+    background-size: auto 100%; /* Cover the entire background area */
+    background-position: center; /* Center the background image */
+}
+
+.div-map-Intro-Text{
+    font-family: 'font-Poller', sans-serif;
+    font-size: 60px;
+    color:white;
+    margin-top: 120px;
+    text-align: Left;
+    text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.div-map-Body{
+    font-family: 'font-Bitter', sans-serif;
+    font-size: 22px;
+    color:white;
+    margin-left: 5px;
+}
+
+#map {
+    height: 600px;
+    width: 100%;
+    margin: 20px auto;
+    margin-top: 30px;
+    max-width: 2000px;  
+}
+
+#google-maps-link {
+    font-family: 'font-Bitter', sans-serif;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4285F4;
+    padding: 10px 20px;
+    border-radius: 5px;
+    
+}
+
+#google-maps-link:hover {
+    background-color: #357AE8;
+}
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+
+    .div-hero {
+        height: 250px;
+        background-color: #000;
+        background-image: url('Images/contact-us-bg.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .div-Hero-Intro-Text {
+        font-family: 'font-Poller', sans-serif;
+        font-size: 24px;
+        color: white;
+        margin-top: 80px;
+        text-align: right;
+        text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .div-Contact-Us-Intro-Text,
+    .div-map-Intro-Text {
+        font-family: 'font-Poller', sans-serif;
+        font-size: 18px;
+        color: white;
+        margin-top: 30px;
+        text-align: left;
+        text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .div-Contact-Us-Body,
+    .div-map-Body {
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 12px;
+        margin-top: 5px;
+        color: white;
+        margin-left: 5px;
+    }
+
+    .div-Contact-Us-Head {
+        font-family: 'font-Poller', sans-serif;
+        font-size: 14px;
+        color: white;
+        margin-top: 8px;
+        text-align: left;
+        text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .div-Contact-Us-UL {
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 12px;
+        color: white;
+        margin-top: 5px;
+    }
+
+    .div-Contact-Us-UL li {
+        padding-bottom: 6px;
+        margin-left: 15px;
+    }
+
+    .div-map {
+        height: 400px;
+        background-color: #131B19;
+        margin-top: 20px;
+        background-image: url('Images/rh2.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    #map {
+        height: 180px;
+        width: 100%;
+        margin: 10px auto;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+ 
+    .div-hero{
+        height: 350PX;
+        background-color: #000000;
+        background-image: url('Images/contact-us-bg.jpg'); /* Background image */
+        background-size: auto 130%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+
+    .div-Hero-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 40px;
+        color:white;
+        margin-top: 200px;
+        text-align: right;
+        text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    /*
+        DIV CONTACT US
+
+    */
+
+    .div-Contact-Us-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 30px;
+        color:white;
+        margin-top: 60px;
+        text-align: Left;
+        text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .div-Contact-Us-Body{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 10px;
+        color:white;
+        margin-left: 5px;
+    }
+
+    .div-Contact-Us-Head{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 18px;
+        color:white;
+        margin-top: 15px;
+        text-align: Left;
+        text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .div-Contact-Us-UL{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 10px;
+        color: white;
+        margin-top: 5px;
+    }
+    .div-Contact-Us-UL li {
+        padding-bottom: 10px; /* Adjust the margin-bottom to control spacing between list items */
+        margin-left: 30px;
+    }
+
+    /*
+        DIV CONTACT US
+
+    */
+
+    .div-map{
+        height: 580PX;
+        background-color: #000000;
+        margin-top: 50px;
+        background-color: #131B19;
+        background-image: url('Images/rh2.png'); /* Background image */
+        background-size: auto 100%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+
+    .div-map-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 30px;
+        color:white;
+        margin-top: 60px;
+        text-align: Left;
+        text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .div-map-Body{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 10px;
+        color:white;
+        margin-left: 5px;
+    }
+
+    #map {
+        height: 300px;
+        width: 100%;
+        margin: 20px auto;
+        margin-top: 30px;
+        max-width: 2000px;  
+    }
+
+}
+ 
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .div-hero{
+        height: 450PX;
+        background-color: #000000;
+        background-image: url('Images/contact-us-bg.jpg'); /* Background image */
+        background-size: auto 130%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+
+    .div-Hero-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 50px;
+        color:white;
+        margin-top: 250px;
+        text-align: right;
+        text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .div-Contact-Us-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 40px;
+        color:white;
+        margin-top: 60px;
+        text-align: Left;
+        text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .div-Contact-Us-Body{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 12px;
+        color:white;
+        margin-left: 5px;
+    }
+
+    .div-Contact-Us-Head{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 20px;
+        color:white;
+        margin-top: 15px;
+        text-align: Left;
+        text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .div-Contact-Us-UL{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 12px;
+        color: white;
+        margin-top: 5px;
+    }
+    .div-Contact-Us-UL li {
+        padding-bottom: 10px; /* Adjust the margin-bottom to control spacing between list items */
+        margin-left: 30px;
+    }
+
+    /*
+        DIV CONTACT US
+
+    */
+
+    .div-map{
+        height: 700PX;
+        background-color: #000000;
+        margin-top: 50px;
+        background-color: #131B19;
+        background-image: url('Images/rh2.png'); /* Background image */
+        background-size: auto 100%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+
+    .div-map-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 40px;
+        color:white;
+        margin-top: 60px;
+        text-align: Left;
+        text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .div-map-Body{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 12px;
+        color:white;
+        margin-left: 5px;
+    }
+
+    #map {
+        height: 400px;
+        width: 100%;
+        margin: 20px auto;
+        margin-top: 30px;
+        max-width: 2000px;  
+    }
+
+}
+ 
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .div-hero{
+        height: 550PX;
+        background-color: #000000;
+        background-image: url('Images/contact-us-bg.jpg'); /* Background image */
+        background-size: auto 130%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+
+    .div-Hero-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 60px;
+        color:white;
+        margin-top: 300px;
+        text-align: right;
+        text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .div-Contact-Us-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 40px;
+        color:white;
+        margin-top: 60px;
+        text-align: Left;
+        text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .div-Contact-Us-Body{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 16px;
+        color:white;
+        margin-left: 5px;
+    }
+
+    .div-Contact-Us-Head{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 22px;
+        color:white;
+        margin-top: 15px;
+        text-align: Left;
+        text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .div-Contact-Us-UL{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 14px;
+        color: white;
+        margin-top: 5px;
+    }
+    .div-Contact-Us-UL li {
+        padding-bottom: 10px; /* Adjust the margin-bottom to control spacing between list items */
+        margin-left: 30px;
+    }
+
+    /*
+        DIV CONTACT US
+
+    */
+
+    .div-map{
+        height: 700PX;
+        background-color: #000000;
+        margin-top: 50px;
+        background-color: #131B19;
+        background-image: url('Images/rh2.png'); /* Background image */
+        background-size: auto 100%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+
+    .div-map-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 40px;
+        color:white;
+        margin-top: 60px;
+        text-align: Left;
+        text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .div-map-Body{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 12px;
+        color:white;
+        margin-left: 5px;
+    }
+
+    #map {
+        height: 400px;
+        width: 100%;
+        margin: 20px auto;
+        margin-top: 30px;
+        max-width: 2000px;  
+    }
+}
+ 
+@media (min-width: 1199.98px) and (max-width: 1299.98px) {
+    .div-hero{
+        height: 650PX;
+        background-color: #000000;
+        background-image: url('Images/contact-us-bg.jpg'); /* Background image */
+        background-size: auto 130%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+
+    .div-Hero-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 80px;
+        color:white;
+        margin-top:350px;
+        text-align: right;
+        text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .div-Contact-Us-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 40px;
+        color:white;
+        margin-top: 60px;
+        text-align: Left;
+        text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .div-Contact-Us-Body{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 16px;
+        color:white;
+        margin-left: 5px;
+    }
+
+    .div-Contact-Us-Head{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 22px;
+        color:white;
+        margin-top: 15px;
+        text-align: Left;
+        text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .div-Contact-Us-UL{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 14px;
+        color: white;
+        margin-top: 5px;
+    }
+    .div-Contact-Us-UL li {
+        padding-bottom: 10px; /* Adjust the margin-bottom to control spacing between list items */
+        margin-left: 30px;
+    }
+
+    /*
+        DIV CONTACT US
+
+    */
+
+    .div-map{
+        height: 700PX;
+        background-color: #000000;
+        margin-top: 50px;
+        background-color: #131B19;
+        background-image: url('Images/rh2.png'); /* Background image */
+        background-size: auto 100%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+
+    .div-map-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 40px;
+        color:white;
+        margin-top: 60px;
+        text-align: Left;
+        text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .div-map-Body{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 12px;
+        color:white;
+        margin-left: 5px;
+    }
+
+    #map {
+        height: 400px;
+        width: 100%;
+        margin: 20px auto;
+        margin-top: 30px;
+        max-width: 2000px;  
+    }
+}
+ 
+ 
+@media (min-width: 1300.98px) and (max-width: 1500.98px){
+    .div-hero{
+        height: 650PX;
+        background-color: #000000;
+        background-image: url('Images/contact-us-bg.jpg'); /* Background image */
+        background-size: auto 130%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+
+    .div-Hero-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 80px;
+        color:white;
+        margin-top:350px;
+        text-align: right;
+        text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .div-Contact-Us-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 50px;
+        color:white;
+        margin-top: 60px;
+        text-align: Left;
+        text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .div-Contact-Us-Body{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 18px;
+        color:white;
+        margin-left: 5px;
+    }
+
+    .div-Contact-Us-Head{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 24px;
+        color:white;
+        margin-top: 15px;
+        text-align: Left;
+        text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .div-Contact-Us-UL{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 18px;
+        color: white;
+        margin-top: 5px;
+    }
+    .div-Contact-Us-UL li {
+        padding-bottom: 10px; /* Adjust the margin-bottom to control spacing between list items */
+        margin-left: 30px;
+    }
+
+    /*
+        DIV CONTACT US
+
+    */
+
+    .div-map{
+        height: 800PX;
+        background-color: #000000;
+        margin-top: 50px;
+        background-color: #131B19;
+        background-image: url('Images/rh2.png'); /* Background image */
+        background-size: auto 100%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+
+    .div-map-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 50px;
+        color:white;
+        margin-top: 60px;
+        text-align: Left;
+        text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .div-map-Body{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 14px;
+        color:white;
+        margin-left: 5px;
+    }
+
+    #map {
+        height: 500px;
+        width: 100%;
+        margin: 20px auto;
+        margin-top: 30px;
+        max-width: 2000px;  
+    }
+}

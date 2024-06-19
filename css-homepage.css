@@ -1,0 +1,2946 @@
+/*
+    FONTS
+*/
+
+
+@font-face {
+    font-family: 'font-Poller';
+    src: url('fonts/PollerOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font-Bitter';
+    src: url('fonts/Bitter-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font-Bitter-Light';
+    src: url('fonts/Bitter-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font-Bitter-SemiBold';
+    src: url('fonts/Bitter-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font-SourceSerifPro';
+    src: url('fonts/s') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #A40B0B;
+    background-image: url('Images/rh.png'); /* Background image */
+    background-size: auto 120%; /* Cover the entire background area */
+    background-position: center; /* Center the background image */
+    background-repeat: repeat-y; /* Prevents the background image from repeating */
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+    height: 6000px; /* Set the body height to fill the viewport */
+}
+
+
+/*
+    HOMEPAGE CONTENTS
+
+*/
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Adjust as needed: space-between, space-around, etc. */
+    align-items: center; /* Adjust as needed: flex-start, flex-end, center, etc. */
+    height: 1000px; /* Set the height of the container */
+}
+
+/* FOR FADE IN ANIMATION OF DIV HERO */
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1s ease-in forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  
+
+/*
+    DIV HERO
+*/
+
+.div-hero{
+    position: absolute;
+    width: 1519px;
+    height: 1900px;
+    left: 50%; /* Move the left edge of the element 50% to the right from the left of the parent */
+    transform: translate(-50%, 0%);
+}
+.div-hero-height{
+    height: 0px;
+}
+
+.div-hero-circle-gif {
+    width: 1100px; /* Width of the circle */
+    height: 1100px; /* Height of the circle */
+    background-image: url('Images/Vinyl.gif'); /* Path to your GIF */
+    background-size: cover; /* Ensures the GIF covers the circle */
+    background-position: center; /* Centers the GIF within the circle */
+    border-radius: 50%; /* Makes the div a circle */
+    overflow: hidden;
+    display: inline-block;   
+}
+
+.div-hero-center-content{
+    text-align: center;
+    padding-top: 20px;
+}
+.div-hero-custom-bg{
+    background-color: rgba(164, 11, 11, 0);
+}
+
+.div-hero-vinyl-cover {
+    position: absolute;
+    top: 959px;
+    left: 50%; /* Move the left edge of the element 50% to the right from the left of the parent */
+    transform: translate(-50%, 0%);
+    width: 1270px; /* Adjust width as needed */
+    height: 820px; /* Adjust height as needed */
+    background-image: url('Images/vinylCover.png'); /* Path to your GIF */
+    background-size: cover; /* Ensures the GIF covers the circle */
+    background-position: center; /* Centers the GIF within the circle */
+}
+
+.div-hero-font-Poller {
+    font-family: 'font-Poller', sans-serif;
+    font-size: 120px;
+    color: #FBDC6A;
+}
+
+
+/*
+    DIV FEATURED MENU
+*/
+    
+.div-feaMenu{
+    position: absolute;
+    width: 1519px;
+    height: 1700px;
+    background-color: black;
+    background-image: url('Images/feuMenuBG.jpg'); /* Background image */
+    background-size: auto 150%; /* Cover the entire background area */
+    background-position: center; /* Center the background image */
+    padding-top: 100px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 2000px;
+    left: 50%; /* Move the left edge of the element 50% to the right from the left of the parent */
+    transform: translate(-50%, 0%);
+}
+
+.div-feaMenu-custom-bg{
+    background-color: rgba(164, 11, 11, 0);
+    
+}
+
+.div-feaMenu-marginTop{
+    margin-top: 70px;
+}
+
+.div-feaMenu-content-height{
+    height: 750px;
+}
+
+.div-feaMenu-center{
+    align-self: center;
+}
+
+.div-alignment{
+    align-content: center;
+    vertical-align: middle;
+}
+
+.div-feaMenu-IntroText{
+    font-family: 'font-Poller', sans-serif;
+    font-size: 120px;
+    color: #FBDC6A;
+}
+
+.div-feaMenu-Body-1{
+    font-family: 'font-Bitter', sans-serif;
+    font-size: 32px;
+    color: #FFFFFF;
+    margin-top: 40px;
+}
+
+.div-feaMenu-Body-2{
+    font-family: 'font-Bitter', sans-serif;
+    font-size: 32px;
+    color: #9747FF;
+    margin-top: 30px;
+}
+
+.div-feaMenu-font-bitter-semibold{
+    font-family: 'font-Bitter-SemiBold', sans-serif;
+    font-size: 32px;
+}
+
+.div-feaMenu-button{
+    margin-top: 120px;
+    align-self:flex-end;
+    width: auto;
+    border-color: #FBDC6A;
+    color: #FBDC6A;
+}
+
+.div-feaMenu-button-container {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: flex-end; /* Align items at the bottom */
+    height: 100%; /* Take full height of the parent container */
+}
+
+.div-feaMenu-pointer {
+    cursor: pointer;
+}
+
+
+/*
+    DIV UPCOMING EVENT
+*/
+
+.div-upcEvent{
+    margin-top: 3700px;
+}
+
+.div-upcEvent-custom-bg{
+    background-color: rgba(164, 11, 11, 0);
+    
+}
+
+.div-upcEvent{
+    position: absolute;
+    width: 1519px;
+    height: 1700px;
+    background-color: #131B19;
+    background-image: url('Images/rh2.png'); /* Background image */
+    background-size: auto 100%; /* Cover the entire background area */
+    background-position: center; /* Center the background image */
+    padding-top: 100px;
+    text-align: center;
+    padding: 20px;
+    left: 50%; /* Move the left edge of the element 50% to the right from the left of the parent */
+    transform: translate(-50%, 0%);
+}
+
+.div-ucpEvent-IntroText{
+    font-family: 'font-Poller', sans-serif;
+    font-size: 120px;
+    color: #FBDC6A;
+    margin-top: 80px;
+}
+
+.div-ucpEvent-Body-1{
+    font-family: 'font-Bitter-SemiBold', sans-serif;
+    font-size: 32px;
+    color: white;
+    margin-top: 20px;
+}
+
+.div-ucpEvent-Margin{
+    margin-top: 80px;
+}
+
+.div-ucpEvent-ImageSize{
+    width: auto;
+    height: 800px;
+}
+
+.div-ucpEvent-CardFont-Date{
+    font-family: 'font-Poller', sans-serif;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 30px;
+    color: #FBDC6A;
+}
+
+.div-ucpEvent-CardFont-Title{
+    font-family: 'font-Poller', sans-serif;
+    font-size: 28px;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #A40B0B;
+}
+
+.div-ucpEvent-CardFont-Paragraph{
+    font-family: 'font-Bitter-Light', sans-serif;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.div-ucpEvent-CardFont-Paragraph2{
+    font-family: 'font-Bitter-SemiBold', sans-serif;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 0px;
+    color: #FBDC6A;
+}
+
+.div-ucpEvent-Card {
+    background-color: transparent; /* Remove background */
+    border: none; /* Optional: remove border */
+    transition: background-color 0.3s ease;
+    cursor: pointer; 
+}
+
+.div-ucpEvent-Card img {
+    transition: opacity 0.3s ease; /* Smooth transition for image opacity */
+}
+.div-ucpEvent-Card:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Dim the card on hover */
+    transform: scale(1.02); /* Slightly scale up the card on hover for effect */
+}
+
+.div-ucpEvent-Card:hover img {
+  opacity: 0.70; /* Dim the image on hover */
+}
+
+.div-ucpEvent-Card h3 {
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background color and text color */
+  }
+
+.div-ucpEvent-Card:hover h3 {
+    color: #F20202; /* Change text color for better contrast */
+}
+
+/*
+    DIV Gallery
+*/
+
+.div-Gallery{
+    position: absolute;
+    width: 1519px;
+    height: 2300px;
+    left: 50%; /* Move the left edge of the element 50% to the right from the left of the parent */
+    transform: translate(-50%, 0%);
+    margin-top: 5400px;
+    text-align: center;
+    
+}
+
+.div-Gallery-CustomBG{
+    background-color: rgba(0, 0, 0, .50);
+}
+
+.div-Gallery-Intro-Text{
+    font-family: 'font-Poller', sans-serif;
+    font-size: 120px;
+    color: white;
+    margin-top: 120px;
+}
+
+.div-Gallery-Body-Text{
+    font-family: 'font-Bitter-SemiBold', sans-serif;
+    font-size: 32px;
+    color: #FBDC6A;
+    margin-top: 20px;
+}
+
+.div-Gallery-Break{
+    height: 50px;
+}
+
+.div-Gallery-Content-Height{
+    height: 560px;
+    padding: 5px;
+}
+
+.div-Gallery-Content-Height-2{
+    height: 420px;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.div-Gallery-Content-Height-3{
+    height: 600px;
+    padding: 5px;
+    margin-top: -70px;
+    margin-bottom: 10px;
+}
+
+
+.div-Gallery-Content-Height-4{
+    height: 560px;
+    padding: 5px;
+    margin-top: -50px;
+}
+
+.div-Gallery-Image{
+    width: 420px;
+    height: 550px;
+    overflow: hidden;
+    object-fit: cover; /* Ensures the image covers the container */
+    object-position: center;
+    transition: transform 0.5s ease;
+}
+
+.div-Gallery-Image-2{
+    width: 420px;
+    height: 440px;
+    overflow: hidden;
+    object-fit: cover; /* Ensures the image covers the container */
+    object-position: center;
+    transition: transform 0.5s ease;
+}
+
+.div-Gallery-Image-3{
+    width: 420px;
+    height: 600px;
+    overflow: hidden;
+    object-fit: cover; /* Ensures the image covers the container */
+    object-position: center;
+    transition: transform 0.5s ease;
+}
+
+.div-Gallery-Image-4{
+    width: 420px;
+    height: 580px;
+    overflow: hidden;
+    object-fit: cover; /* Ensures the image covers the container */
+    object-position: center;
+    transition: transform 0.5s ease;
+}
+
+.div-Galler-Hover:hover{
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+.div-Gallery-font-bitter-semibold{
+    font-family: 'font-Bitter-SemiBold', sans-serif;
+    font-size: 30px;
+}
+
+.div-Gallery-button{
+    margin-top: 20px;
+    align-self:flex-end;
+    width: auto;
+    border-color: #FBDC6A;
+    color: #FBDC6A;
+}
+
+
+
+.div-Gallery-button-container {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: flex-end; /* Align items at the bottom */
+    height: 100%; /* Take full height of the parent container */
+}
+
+
+/*
+    BOOK EVENT
+*/
+
+.div-Book-Event{
+    position: absolute;
+    width: 1519px;
+    height: 500px;
+    margin-top: 7700px;
+    background-color:#FBDC6A;
+    background-image: url('Images/rh2.png'); /* Background image */
+    background-size: auto 200%; /* Cover the entire background area */
+    background-position: center; /* Center the background image */
+    padding-top: 100px;
+    padding: 20px;
+    left: 50%; /* Move the left edge of the element 50% to the right from the left of the parent */
+    transform: translate(-50%, 0%);
+}
+
+.div-Book-Event-Intro-Text{
+    font-family: 'font-Poller', sans-serif;
+    font-size: 72px;
+    color:#A40B0B;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.div-Book-Event-font-bitter-semibold{
+    font-family: 'font-Bitter-SemiBold', sans-serif;
+    font-size: 20px;
+}
+
+.div-Book-Event-button-container{
+    display: flex;
+    justify-content:center; /* Align items to the right */
+    align-items: flex-end; /* Align items at the bottom */
+}
+
+.div-Book-Event-button{
+    margin-top: 20px;
+    width: auto;
+    color:#A40B0B; 
+    background-color: white; 
+    border: none; 
+    width: 100%;
+}
+
+
+/*
+    FOOTER
+*/
+
+.footer-margin{
+    margin-top: 8200px;
+    
+}
+
+.credits{
+    font-family: 'font-Bitter-SemiBold', sans-serif;
+    font-size: 12px;
+    text-align: left;
+    color: white;
+    opacity: 60%;
+}
+
+
+
+/*
+   Homepage Screen Sizes
+*/
+@media (min-width: 320px) and (max-width: 575.98px) {
+
+    body {
+        background-color: #A40B0B;
+        background-image: url('Images/rh.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: repeat-y;
+        margin-top: 50px;
+        padding-top: 100px;
+        height: 100vh;
+    }
+
+    .div-hero-height {
+        height: 400px; /* Adjusted height for smaller screens */
+    }
+
+    .div-hero-circle-gif {
+        width: 320px; /* Reduced width for smaller screens */
+        height: 320px; /* Reduced height for smaller screens */
+        background-size: cover;
+    }
+
+    .div-hero-vinyl-cover {
+        width: 380px; /* Adjusted width for smaller screens */
+        height: 240px; /* Adjusted height for smaller screens */
+        margin-top: -690px;
+    }
+
+    .div-hero-font-Poller {
+        font-size: 30px; /* Adjusted font size for smaller screens */
+        margin-top: 10px; /* Adjusted margin for smaller screens */
+    }
+
+    .div-feaMenu {
+        width: 100%;
+        height: 600px; /* Adjusted height for smaller screens */
+        margin-top: 600px; /* Adjusted margin top for smaller screens */
+    }
+    .div-feaMenu-marginTop{
+        margin-top: -230px;
+    }
+
+    .div-feaMenu-IntroText {
+        font-size: 30px; /* Adjusted font size for smaller screens */
+        margin-top: 0px; /* Adjusted margin top for smaller screens */
+    }
+
+    .div-feaMenu-Body-1,
+    .div-feaMenu-Body-2 {
+        font-size: 12px; /* Adjusted font size for smaller screens */
+        margin-top: 10px; /* Adjusted margin top for smaller screens */
+    }
+
+    .div-feaMenu-font-bitter-semibold {
+        font-size: 10px; /* Adjusted font size for smaller screens */
+    }
+
+    .div-feaMenu-button {
+        width: 100px; /* Adjusted width for smaller screens */
+        margin-top: -480px;
+    }
+
+    .div-upcEvent {
+        width: 100%;
+        height: 650px; /* Adjusted height for smaller screens */
+        margin-top: 1200px; /* Adjusted margin top for smaller screens */
+    }
+
+    
+    .div-ucpEvent-Margin{
+        margin-top: 30px;
+    }
+
+    .div-ucpEvent-ImageSize{
+        width: auto;
+        height: 230px;
+    }
+
+    .div-ucpEvent-IntroText {
+        font-size: 30px; /* Adjusted font size for smaller screens */
+        margin-top: 20px; /* Adjusted margin top for smaller screens */
+    }
+
+    .div-ucpEvent-Body-1 {
+        font-size: 12px; /* Adjusted font size for smaller screens */
+        margin-top: 10px; /* Adjusted margin top for smaller screens */
+    }
+
+    .div-ucpEvent-CardFont-Date {
+        font-size: 10px; /* Adjusted font size for smaller screens */
+        margin-top: 20px; /* Adjusted margin top for smaller screens */
+    }
+
+    .div-ucpEvent-CardFont-Title {
+        font-size: 16px; /* Adjusted font size for smaller screens */
+        margin-top: 5px; /* Adjusted margin top for smaller screens */
+        margin-bottom: 10px; /* Adjusted margin bottom for smaller screens */
+    }
+
+    .div-ucpEvent-CardFont-Paragraph,
+    .div-ucpEvent-CardFont-Paragraph2 {
+        font-size: 8px; /* Adjusted font size for smaller screens */
+        margin-top: 0px; /* Adjusted margin top for smaller screens */
+        margin-bottom: 10px; /* Adjusted margin bottom for smaller screens */
+    }
+
+    .div-Gallery {
+        width: 100%;
+        height: 4000px; /* Adjusted height for smaller screens */
+        margin-top: 1850px; /* Adjusted margin top for smaller screens */
+    }
+
+    .div-Gallery-Intro-Text {
+        font-size: 30px; /* Adjusted font size for smaller screens */
+        margin-top: 20px; /* Adjusted margin top for smaller screens */
+    }
+
+    .div-Gallery-Body-Text {
+        font-size: 10px; /* Adjusted font size for smaller screens */
+        margin-top: 10px; /* Adjusted margin top for smaller screens */
+    }
+
+    .div-Gallery-Break {
+        height: 30px; /* Adjusted height for smaller screens */
+    }
+
+    .div-Gallery-Content-Height,
+    .div-Gallery-Content-Height-2,
+    .div-Gallery-Content-Height-3,
+    .div-Gallery-Content-Height-4 {
+        height: 400px; /* Adjusted height for smaller screens */
+        margin-top: 0px; /* Adjusted margin top for smaller screens */
+        margin-bottom: 20px; /* Adjusted margin bottom for smaller screens */
+    }
+
+    .div-Gallery-Image,
+    .div-Gallery-Image-2,
+    .div-Gallery-Image-3,
+    .div-Gallery-Image-4 {
+        width: 320px; /* Adjusted width for smaller screens */
+        height: 420px; /* Adjusted height for smaller screens */
+    }
+
+    .div-Gallery-font-bitter-semibold {
+        font-size: 12px; /* Adjusted font size for smaller screens */
+    }
+
+    .div-Gallery-button {
+        width: 80px; /* Adjusted width for smaller screens */
+    }
+
+    .div-Book-Event {
+        width: 100%;
+        height: 200px; /* Adjusted height for smaller screens */
+        margin-top: 5850px; /* Adjusted margin top for smaller screens */
+    }
+
+    .div-Book-Event-Intro-Text {
+        font-size: 25px; /* Adjusted font size for smaller screens */
+        margin-top: 30px; /* Adjusted margin top for smaller screens */
+    }
+
+    .div-Book-Event-font-bitter-semibold {
+        font-size: 10px; /* Adjusted font size for smaller screens */
+    }
+
+    .div-Book-Event-button {
+        width: 80px; /* Adjusted width for smaller screens */
+    }
+
+    .footer-margin {
+        margin-top: 6050px; /* Adjusted margin top for smaller screens */
+    }
+
+    .credits {
+        font-size: 10px; /* Adjusted font size for smaller screens */
+        margin-top: 20px; /* Adjusted margin top for smaller screens */
+    }
+
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* Small devices (landscape phones, 576px and up) */
+
+    body {
+        background-color: #A40B0B;
+        background-image: url('Images/rh.png'); /* Background image */
+        background-size: auto 120%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        background-repeat: repeat-y; /* Prevents the background image from repeating */
+        margin: 0; /* Reset default margin */
+        padding: 0; /* Reset default padding */
+        height: 100vh; /* Set the body height to fill the viewport */
+    }
+
+    .div-hero-height{
+        height: 800px; /* Height for lg screens */
+    }
+    
+    .div-hero-circle-gif {
+        width: 420px; /* Width of the circle */
+        height: 420px; /* Height of the circle */
+        background-image: url('Images/Vinyl.gif'); /* Path to your GIF */
+        background-size: cover; /* Ensures the GIF covers the circle */
+        background-position: center; /* Centers the GIF within the circle */
+        border-radius: 50%; /* Makes the div a circle */
+        overflow: hidden;
+        display: inline-block;
+    }
+    
+    .div-hero-vinyl-cover {
+        position: absolute;
+        top: 350px;
+        left: 50%; /* Move the left edge of the element 50% to the right from the left of the parent */
+        transform: translate(-50%, 0%);
+        width: 510px; /* Adjust width as needed */
+        height: 320px; /* Adjust height as needed */
+        background-image: url('Images/vinylCover.png'); /* Path to your GIF */
+        background-size: cover; /* Ensures the GIF covers the circle */
+        background-position: center; /* Centers the GIF within the circle */
+    }
+
+    .div-hero-font-Poller {
+        font-family: 'font-Poller', sans-serif;
+        font-size: 45px;
+        color: #FBDC6A;
+        margin-top: 20px;
+    }
+
+    .div-feaMenu{
+        position: absolute;
+        width: 1519px;
+        height: 800px;
+        background-color: black;
+        background-image: url('Images/feuMenuBG.jpg'); /* Background image */
+        background-size: auto 150%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        padding-top: 100px;
+        text-align: center;
+        padding: 20px;
+        margin-top: 800px;
+        left: 50%; /* Move the left edge of the element 50% to the right from the left of the parent */
+        transform: translate(-50%, 0%);
+    }
+
+    .div-feaMenu-marginTop{
+        margin-top: 0px;
+    }
+
+    .div-feaMenu-content-height{
+        height: 400px;
+    }
+
+    .div-feaMenu-IntroText{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 40px;
+        color: #FBDC6A;
+        margin-top: 40px;
+    }
+
+    .div-feaMenu-Body-1{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 14px;
+        color: #FFFFFF;
+        margin-top: 40px;
+    }
+
+    .div-feaMenu-Body-2{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 14px;
+        color: #9747FF;
+        margin-top: 30px;
+    }
+
+    .div-feaMenu-font-bitter-semibold{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 12px;
+    }
+
+    .div-feaMenu-button{
+        margin-top: 0px;
+        align-self:flex-end;
+        width: 100px;
+        border-color: #FBDC6A;
+        color: #FBDC6A;
+    }
+
+    .div-feaMenu-button-container {
+        display: flex;
+        justify-content: flex-end; /* Align items to the right */
+        align-items: flex-end; /* Align items at the bottom */
+        height: 10%; /* Take full height of the parent container */
+    }
+
+        
+    .div-upcEvent{
+        margin-top: 1600px;
+    }
+
+    .div-upcEvent{
+        position: absolute;
+        width: 1519px;
+        height: 1000px;
+        background-color: #131B19;
+        background-image: url('Images/rh2.png'); /* Background image */
+        background-size: auto 100%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        padding-top: 100px;
+        text-align: center;
+        padding: 20px;
+        left: 50%; /* Move the left edge of the element 50% to the right from the left of the parent */
+        transform: translate(-50%, 0%);
+    }
+
+    .div-ucpEvent-IntroText{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 40px;
+        color: #FBDC6A;
+        margin-top: 40px;
+    }
+
+    .div-ucpEvent-Body-1{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 14px;
+        color: white;
+        margin-top: 20px;
+    }
+
+    .div-ucpEvent-Margin{
+        margin-top: 30px;
+    }
+
+    .div-ucpEvent-ImageSize{
+        width: auto;
+        height: 300px;
+    }
+
+    .div-ucpEvent-CardFont-Date{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 12px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 30px;
+        color: #FBDC6A;
+    }
+
+    .div-ucpEvent-CardFont-Title{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 20px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        color: #A40B0B;
+    }
+
+    .div-ucpEvent-CardFont-Paragraph{
+        font-family: 'font-Bitter-Light', sans-serif;
+        font-size: 12px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    .div-ucpEvent-CardFont-Paragraph2{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 12px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 0px;
+        color: #FBDC6A;
+    }
+
+    
+    .div-Gallery{
+        position: absolute;
+        width: 1519px;
+        height: 4800px;
+        left: 50%; /* Move the left edge of the element 50% to the right from the left of the parent */
+        transform: translate(-50%, 0%);
+        margin-top: 2600px;
+        text-align: center;
+        
+    }
+
+    .div-Gallery-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 40px;
+        color: white;
+        margin-top: 40px;
+    }
+
+    .div-Gallery-Body-Text{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 12px;
+        color: #FBDC6A;
+        margin-top: 20px;
+    }
+
+    .div-Gallery-Break{
+        height: 50px;
+    }
+
+    .div-Gallery-Content-Height{
+        height: 560px;
+        padding: 0px;
+    }
+
+    .div-Gallery-Content-Height-2{
+        height: 420px;
+        padding: 0px;
+        margin-top: 0px;
+    }
+
+    .div-Gallery-Content-Height-3{
+        height: 600px;
+        padding: 0px;
+        margin-top: -70px;
+        margin-bottom: 0px;
+    }
+
+    .div-Gallery-Content-Height-4{
+        height: 560px;
+        padding: 0px;
+        margin-top: -0px;
+    }
+
+    .div-Gallery-Image{
+        width: 420px;
+        height: 550px;
+        overflow: hidden;
+        object-fit: cover; /* Ensures the image covers the container */
+        object-position: center;
+        transition: transform 0.5s ease;
+    }
+
+    .div-Gallery-Image-2{
+        width: 420px;
+        height: 440px;
+        overflow: hidden;
+        object-fit: cover; /* Ensures the image covers the container */
+        object-position: center;
+        transition: transform 0.5s ease;
+    }
+
+    .div-Gallery-Image-3{
+        width: 420px;
+        height: 600px;
+        overflow: hidden;
+        object-fit: cover; /* Ensures the image covers the container */
+        object-position: center;
+        transition: transform 0.5s ease;
+    }
+
+    .div-Gallery-Image-4{
+        width: 420px;
+        height: 580px;
+        overflow: hidden;
+        object-fit: cover; /* Ensures the image covers the container */
+        object-position: center;
+        transition: transform 0.5s ease;
+    }
+
+    .div-Gallery-font-bitter-semibold{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 16px;
+    }
+
+    .div-Gallery-button{
+        margin-top: 20px;
+        align-self:flex-end;
+        width: auto;
+        border-color: #FBDC6A;
+        color: #FBDC6A;
+    }
+
+    .div-Gallery-button-container {
+        display: flex;
+        justify-content: flex-end; /* Align items to the right */
+        align-items: flex-end; /* Align items at the bottom */
+        height: 100%; /* Take full height of the parent container */
+    }
+
+    
+    .div-Book-Event{
+        position: absolute;
+        width: 1519px;
+        height: 200px;
+        margin-top: 7400px;
+        background-color:#FBDC6A;
+        background-image: url('Images/rh2.png'); /* Background image */
+        background-size: auto 200%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        padding-top: 100px;
+        padding: 20px;
+        left: 50%; /* Move the left edge of the element 50% to the right from the left of the parent */
+        transform: translate(-50%, 0%);
+    }
+
+    .div-Book-Event-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 35px;
+        color:#A40B0B;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .div-Book-Event-font-bitter-semibold{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 12px;
+    }
+
+    .div-Book-Event-button-container{
+        display: flex;
+        justify-content:center; /* Align items to the right */
+        align-items: flex-end; /* Align items at the bottom */
+    }
+
+    .div-Book-Event-button{
+        margin-top: 20px;
+        width: auto;
+        color:#A40B0B; 
+        background-color: white; 
+        border: none; 
+        width: 100px;
+    }
+
+    .footer-margin{
+        margin-top: 7600px;
+        
+    }
+    
+    .credits{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 12px;
+        text-align: left;
+        color: white;
+        opacity: 60%;
+        
+        margin-top: 20px;
+    }
+    
+   
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* Medium devices (tablets, 768px and up) */
+    
+    body {
+        background-color: #A40B0B;
+        background-image: url('Images/rh.png'); /* Background image */
+        background-size: auto 140%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        background-repeat: repeat-y; /* Prevents the background image from repeating */
+        margin: 0; /* Reset default margin */
+        padding: 0; /* Reset default padding */
+        height: 100vh; /* Set the body height to fill the viewport */
+    }
+
+    .div-hero-height{
+        height: 1100px; /* Height for lg screens */
+    }
+    
+    .div-hero-circle-gif {
+        width: 600px; /* Width of the circle */
+        height: 600px; /* Height of the circle */
+        background-image: url('Images/Vinyl.gif'); /* Path to your GIF */
+        background-size: cover; /* Ensures the GIF covers the circle */
+        background-position: center; /* Centers the GIF within the circle */
+        border-radius: 50%; /* Makes the div a circle */
+        overflow: hidden;
+        display: inline-block;
+    }
+    
+    .div-hero-vinyl-cover {
+        position: absolute;
+        top: 540px;
+        left: 50%; /* Move the left edge of the element 50% to the right from the left of the parent */
+        transform: translate(-50%, 0%);
+        width: 730px; /* Adjust width as needed */
+        height: 470px; /* Adjust height as needed */
+        background-image: url('Images/vinylCover.png'); /* Path to your GIF */
+        background-size: cover; /* Ensures the GIF covers the circle */
+        background-position: center; /* Centers the GIF within the circle */
+    }
+
+    .div-hero-font-Poller {
+        font-family: 'font-Poller', sans-serif;
+        font-size: 65px;
+        color: #FBDC6A;
+    }
+
+
+    .div-feaMenu{
+        position: absolute;
+        width: 1519px;
+        height: 1000px;
+        background-color: black;
+        background-image: url('Images/feuMenuBG.jpg'); /* Background image */
+        background-size: auto 150%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        padding-top: 100px;
+        text-align: center;
+        padding: 20px;
+        margin-top: 1100px;
+        left: 50%; /* Move the left edge of the element 50% to the right from the left of the parent */
+        transform: translate(-50%, 0%);
+    }
+
+    .div-feaMenu-marginTop{
+        margin-top: 0px;
+    }
+
+    .div-feaMenu-content-height{
+        height: 400px;
+    }
+
+    .div-feaMenu-IntroText{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 60px;
+        color: #FBDC6A;
+        margin-top: 40px;
+    }
+
+    .div-feaMenu-Body-1{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 16px;
+        color: #FFFFFF;
+        margin-top: 40px;
+    }
+
+    .div-feaMenu-Body-2{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 16px;
+        color: #9747FF;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .div-feaMenu-font-bitter-semibold{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 12px;
+    }
+
+    .div-feaMenu-button{
+        margin-top: 70px;
+        align-self:flex-end;
+        width: 100px;
+        border-color: #FBDC6A;
+        color: #FBDC6A;
+    }
+
+    .div-feaMenu-button-container {
+        display: flex;
+        justify-content: flex-end; /* Align items to the right */
+        align-items: flex-end; /* Align items at the bottom */
+        height: 10%; /* Take full height of the parent container */
+    }
+
+        
+    .div-upcEvent{
+        margin-top: 2100px;
+    }
+
+    .div-upcEvent{
+        position: absolute;
+        width: 1519px;
+        height: 1100px;
+        background-color: #131B19;
+        background-image: url('Images/rh2.png'); /* Background image */
+        background-size: auto 100%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        padding-top: 100px;
+        text-align: center;
+        padding: 20px;
+        left: 50%; /* Move the left edge of the element 50% to the right from the left of the parent */
+        transform: translate(-50%, 0%);
+    }
+
+    .div-ucpEvent-IntroText{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 65px;
+        color: #FBDC6A;
+        margin-top: 40px;
+    }
+
+    .div-ucpEvent-Body-1{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 16px;
+        color: white;
+        margin-top: 20px;
+    }
+
+    .div-ucpEvent-Margin{
+        margin-top: 30px;
+    }
+
+    .div-ucpEvent-ImageSize{
+        width: auto;
+        height: 450px;
+    }
+
+    .div-ucpEvent-CardFont-Date{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 12px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 30px;
+        color: #FBDC6A;
+    }
+
+    .div-ucpEvent-CardFont-Title{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 20px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        color: #A40B0B;
+    }
+
+    .div-ucpEvent-CardFont-Paragraph{
+        font-family: 'font-Bitter-Light', sans-serif;
+        font-size: 12px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    .div-ucpEvent-CardFont-Paragraph2{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 12px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 0px;
+        color: #FBDC6A;
+    }
+
+    
+    .div-Gallery{
+        position: absolute;
+        width: 1519px;
+        height: 4800px;
+        left: 50%; /* Move the left edge of the element 50% to the right from the left of the parent */
+        transform: translate(-50%, 0%);
+        margin-top: 3200px;
+        text-align: center;
+        
+    }
+
+    .div-Gallery-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 65px;
+        color: white;
+        margin-top: 40px;
+    }
+
+    .div-Gallery-Body-Text{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 16px;
+        color: #FBDC6A;
+        margin-top: 20px;
+    }
+
+    .div-Gallery-Break{
+        height: 50px;
+    }
+
+    .div-Gallery-Content-Height{
+        height: 560px;
+        padding: 0px;
+    }
+
+    .div-Gallery-Content-Height-2{
+        height: 420px;
+        padding: 0px;
+        margin-top: 0px;
+    }
+
+    .div-Gallery-Content-Height-3{
+        height: 600px;
+        padding: 0px;
+        margin-top: -70px;
+        margin-bottom: 0px;
+    }
+
+    .div-Gallery-Content-Height-4{
+        height: 560px;
+        padding: 0px;
+        margin-top: -0px;
+    }
+
+    .div-Gallery-Image{
+        width: 420px;
+        height: 550px;
+        overflow: hidden;
+        object-fit: cover; /* Ensures the image covers the container */
+        object-position: center;
+        transition: transform 0.5s ease;
+    }
+
+    .div-Gallery-Image-2{
+        width: 420px;
+        height: 440px;
+        overflow: hidden;
+        object-fit: cover; /* Ensures the image covers the container */
+        object-position: center;
+        transition: transform 0.5s ease;
+    }
+
+    .div-Gallery-Image-3{
+        width: 420px;
+        height: 600px;
+        overflow: hidden;
+        object-fit: cover; /* Ensures the image covers the container */
+        object-position: center;
+        transition: transform 0.5s ease;
+    }
+
+    .div-Gallery-Image-4{
+        width: 420px;
+        height: 580px;
+        overflow: hidden;
+        object-fit: cover; /* Ensures the image covers the container */
+        object-position: center;
+        transition: transform 0.5s ease;
+    }
+
+    .div-Gallery-font-bitter-semibold{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 16px;
+    }
+
+    .div-Gallery-button{
+        margin-top: 20px;
+        align-self:flex-end;
+        width: auto;
+        border-color: #FBDC6A;
+        color: #FBDC6A;
+    }
+
+    .div-Gallery-button-container {
+        display: flex;
+        justify-content: flex-end; /* Align items to the right */
+        align-items: flex-end; /* Align items at the bottom */
+        height: 100%; /* Take full height of the parent container */
+    }
+
+    
+    .div-Book-Event{
+        position: absolute;
+        width: 1519px;
+        height: 300px;
+        margin-top: 8000px;
+        background-color:#FBDC6A;
+        background-image: url('Images/rh2.png'); /* Background image */
+        background-size: auto 200%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        padding-top: 100px;
+        padding: 20px;
+        left: 50%; /* Move the left edge of the element 50% to the right from the left of the parent */
+        transform: translate(-50%, 0%);
+    }
+
+    .div-Book-Event-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 40px;
+        color:#A40B0B;
+        margin-top: 65px;
+        text-align: center;
+    }
+
+    .div-Book-Event-font-bitter-semibold{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 12px;
+    }
+
+    .div-Book-Event-button-container{
+        display: flex;
+        justify-content:center; /* Align items to the right */
+        align-items: flex-end; /* Align items at the bottom */
+    }
+
+    .div-Book-Event-button{
+        margin-top: 20px;
+        width: auto;
+        color:#A40B0B; 
+        background-color: white; 
+        border: none; 
+        width: 100px;
+    }
+
+    .footer-margin{
+        margin-top: 8300px;
+        
+    }
+    
+    .credits{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 12px;
+        text-align: left;
+        color: white;
+        opacity: 60%;
+        
+        margin-top: 20px;
+    }
+    
+    
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* Large devices (desktops, 992px and up) */
+
+    body {
+        background-color: #A40B0B;
+        background-image: url('Images/rh.png'); /* Background image */
+        background-size: auto 160%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        background-repeat: repeat-y; /* Prevents the background image from repeating */
+        margin: 0; /* Reset default margin */
+        padding: 0; /* Reset default padding */
+        height: 100vh; /* Set the body height to fill the viewport */
+    }
+
+    .div-hero-height{
+        height: 1500px; /* Height for lg screens */
+    }
+    
+    .div-hero-circle-gif {
+        width: 800px; /* Width of the circle */
+        height: 800px; /* Height of the circle */
+        background-image: url('Images/Vinyl.gif'); /* Path to your GIF */
+        background-size: cover; /* Ensures the GIF covers the circle */
+        background-position: center; /* Centers the GIF within the circle */
+        border-radius: 50%; /* Makes the div a circle */
+        overflow: hidden;
+        display: inline-block;
+    }
+    
+    .div-hero-vinyl-cover {
+        position: absolute;
+        top: 679px;
+        left: 50%; /* Move the left edge of the element 50% to the right from the left of the parent */
+        transform: translate(-50%, 0%);
+        width: 950px; /* Adjust width as needed */
+        height: 620px; /* Adjust height as needed */
+        background-image: url('Images/vinylCover.png'); /* Path to your GIF */
+        background-size: cover; /* Ensures the GIF covers the circle */
+        background-position: center; /* Centers the GIF within the circle */
+    }
+
+    .div-hero-font-Poller {
+        font-family: 'font-Poller', sans-serif;
+        font-size: 80px;
+        color: #FBDC6A;
+    }
+    
+    
+    .div-feaMenu{
+        position: absolute;
+        width: 1519px;
+        height: 1300px;
+        background-color: black;
+        background-image: url('Images/feuMenuBG.jpg'); /* Background image */
+        background-size: auto 150%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        padding-top: 100px;
+        text-align: center;
+        padding: 20px;
+        margin-top: 1400px;
+        left: 50%; /* Move the left edge of the element 50% to the right from the left of the parent */
+        transform: translate(-50%, 0%);
+    }
+
+    .div-feaMenu-marginTop{
+        margin-top: 0px;
+    }
+
+    .div-feaMenu-content-height{
+        height: 400px;
+    }
+
+    .div-feaMenu-IntroText{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 85px;
+        color: #FBDC6A;
+        margin-top: 40px;
+    }
+
+    .div-feaMenu-Body-1{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 16px;
+        color: #FFFFFF;
+        margin-top: 40px;
+    }
+
+    .div-feaMenu-Body-2{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 16px;
+        color: #9747FF;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .div-feaMenu-font-bitter-semibold{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 12px;
+    }
+
+    .div-feaMenu-button{
+        margin-top: 250px;
+        align-self:flex-end;
+        width: 100px;
+        border-color: #FBDC6A;
+        color: #FBDC6A;
+    }
+
+    .div-feaMenu-button-container {
+        display: flex;
+        justify-content: flex-end; /* Align items to the right */
+        align-items: flex-end; /* Align items at the bottom */
+        height: 10%; /* Take full height of the parent container */
+    }
+
+        
+    .div-upcEvent{
+        margin-top: 2700px;
+    }
+
+    .div-upcEvent{
+        position: absolute;
+        width: 1519px;
+        height: 1200px;
+        background-color: #131B19;
+        background-image: url('Images/rh2.png'); /* Background image */
+        background-size: auto 100%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        padding-top: 100px;
+        text-align: center;
+        padding: 20px;
+        left: 50%; /* Move the left edge of the element 50% to the right from the left of the parent */
+        transform: translate(-50%, 0%);
+    }
+
+    .div-ucpEvent-IntroText{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 85px;
+        color: #FBDC6A;
+        margin-top: 40px;
+    }
+
+    .div-ucpEvent-Body-1{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 16px;
+        color: white;
+        margin-top: 20px;
+    }
+
+    .div-ucpEvent-Margin{
+        margin-top: 30px;
+    }
+
+    .div-ucpEvent-ImageSize{
+        width: auto;
+        height: 550px;
+    }
+
+    .div-ucpEvent-CardFont-Date{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 12px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 30px;
+        color: #FBDC6A;
+    }
+
+    .div-ucpEvent-CardFont-Title{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 20px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        color: #A40B0B;
+    }
+
+    .div-ucpEvent-CardFont-Paragraph{
+        font-family: 'font-Bitter-Light', sans-serif;
+        font-size: 12px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    .div-ucpEvent-CardFont-Paragraph2{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 12px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 0px;
+        color: #FBDC6A;
+    }
+
+    
+    .div-Gallery{
+        position: absolute;
+        width: 1519px;
+        height: 1700px;
+        left: 50%; /* Move the left edge of the element 50% to the right from the left of the parent */
+        transform: translate(-50%, 0%);
+        margin-top: 3900px;
+        text-align: center;
+        
+    }
+
+    .div-Gallery-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 65px;
+        color: white;
+        margin-top: 40px;
+    }
+
+    .div-Gallery-Body-Text{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 16px;
+        color: #FBDC6A;
+        margin-top: 20px;
+    }
+
+    .div-Gallery-Break{
+        height: 50px;
+    }
+
+    .div-Gallery-Content-Height{
+        height: 360px;
+        padding: 30px;
+        margin-bottom: 90px;
+        margin-top: -20px;
+    }
+
+    .div-Gallery-Content-Height-2{
+        height: 220px;
+        padding: 30px;
+        margin-bottom: -10px;
+        margin-top: 20px;
+    }
+
+    .div-Gallery-Content-Height-3{
+        height: 400px;
+        padding: 30px;
+        margin-top: -50px;
+        margin-bottom: 100px;
+    }
+
+    .div-Gallery-Content-Height-4{
+        height: 360px;
+        padding: 30px;
+        margin-top: -70px;
+    }
+
+    .div-Gallery-Image{
+        width: 300px;
+        height: 450px;
+        overflow: hidden;
+        object-fit: cover; /* Ensures the image covers the container */
+        object-position: center;
+        transition: transform 0.5s ease;
+    }
+
+    .div-Gallery-Image-2{
+        width: 300px;
+        height: 340px;
+        overflow: hidden;
+        object-fit: cover; /* Ensures the image covers the container */
+        object-position: center;
+        transition: transform 0.5s ease;
+    }
+
+    .div-Gallery-Image-3{
+        width: 300px;
+        height: 500px;
+        overflow: hidden;
+        object-fit: cover; /* Ensures the image covers the container */
+        object-position: center;
+        transition: transform 0.5s ease;
+    }
+
+    .div-Gallery-Image-4{
+        width: 300px;
+        height: 480px;
+        overflow: hidden;
+        object-fit: cover; /* Ensures the image covers the container */
+        object-position: center;
+        transition: transform 0.5s ease;
+    }
+
+    .div-Gallery-font-bitter-semibold{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 16px;
+    }
+
+    .div-Gallery-button{
+        margin-top: 160px;
+        align-self:flex-end;
+        width: auto;
+        border-color: #FBDC6A;
+        color: #FBDC6A;
+    }
+
+    .div-Gallery-button-container {
+        display: flex;
+        justify-content: flex-end; /* Align items to the right */
+        align-items: flex-end; /* Align items at the bottom */
+        height: 100%; /* Take full height of the parent container */
+    }
+
+    
+    .div-Book-Event{
+        position: absolute;
+        width: 1519px;
+        height: 400px;
+        margin-top: 5600px;
+        background-color:#FBDC6A;
+        background-image: url('Images/rh2.png'); /* Background image */
+        background-size: auto 200%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        padding-top: 100px;
+        padding: 20px;
+        left: 50%; /* Move the left edge of the element 50% to the right from the left of the parent */
+        transform: translate(-50%, 0%);
+    }
+
+    .div-Book-Event-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 60px;
+        color:#A40B0B;
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .div-Book-Event-font-bitter-semibold{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 16px;
+    }
+
+    .div-Book-Event-button-container{
+        display: flex;
+        justify-content:center; /* Align items to the right */
+        align-items: flex-end; /* Align items at the bottom */
+    }
+
+    .div-Book-Event-button{
+        margin-top: 20px;
+        width: auto;
+        color:#A40B0B; 
+        background-color: white; 
+        border: none; 
+        width: 100px;
+    }
+
+    .footer-margin{
+        margin-top: 6000px;
+        
+    }
+    
+    .credits{
+        
+        margin-top: 160px;
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 12px;
+        text-align: left;
+        color: white;
+        opacity: 60%;
+    }
+    
+}
+
+@media (min-width: 1199.98px) and (max-width: 1299.98px) {
+    /* Large devices (desktops, 992px and up) */
+ /* Large devices (desktops, 992px and up) */
+
+    body {
+        background-color: #A40B0B;
+        background-image: url('Images/rh.png'); /* Background image */
+        background-size: auto 160%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        background-repeat: repeat-y; /* Prevents the background image from repeating */
+        margin: 0; /* Reset default margin */
+        padding: 0; /* Reset default padding */
+        height: 100vh; /* Set the body height to fill the viewport */
+    }
+
+    .div-hero-height{
+        height: 1500px; /* Height for lg screens */
+    }
+    
+    .div-hero-circle-gif {
+        width: 800px; /* Width of the circle */
+        height: 800px; /* Height of the circle */
+        background-image: url('Images/Vinyl.gif'); /* Path to your GIF */
+        background-size: cover; /* Ensures the GIF covers the circle */
+        background-position: center; /* Centers the GIF within the circle */
+        border-radius: 50%; /* Makes the div a circle */
+        overflow: hidden;
+        display: inline-block;
+    }
+    
+    .div-hero-vinyl-cover {
+        position: absolute;
+        top: 679px;
+        left: 50%; /* Move the left edge of the element 50% to the right from the left of the parent */
+        transform: translate(-50%, 0%);
+        width: 950px; /* Adjust width as needed */
+        height: 620px; /* Adjust height as needed */
+        background-image: url('Images/vinylCover.png'); /* Path to your GIF */
+        background-size: cover; /* Ensures the GIF covers the circle */
+        background-position: center; /* Centers the GIF within the circle */
+    }
+
+    .div-hero-font-Poller {
+        font-family: 'font-Poller', sans-serif;
+        font-size: 80px;
+        color: #FBDC6A;
+    }
+
+     
+    .div-feaMenu{
+        position: absolute;
+        width: 1519px;
+        height: 1400px;
+        background-color: black;
+        background-image: url('Images/feuMenuBG.jpg'); /* Background image */
+        background-size: auto 150%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        padding-top: 100px;
+        text-align: center;
+        padding: 20px;
+        margin-top: 1400px;
+        left: 50%; /* Move the left edge of the element 50% to the right from the left of the parent */
+        transform: translate(-50%, 0%);
+    }
+
+    .div-feaMenu-marginTop{
+        margin-top: 0px;
+    }
+
+    .div-feaMenu-content-height{
+        height: 400px;
+    }
+
+    .div-feaMenu-IntroText{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 100px;
+        color: #FBDC6A;
+        margin-top: 40px;
+    }
+
+    .div-feaMenu-Body-1{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 18px;
+        color: #FFFFFF;
+        margin-top: 40px;
+    }
+
+    .div-feaMenu-Body-2{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 18px;
+        color: #9747FF;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .div-feaMenu-font-bitter-semibold{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 12px;
+    }
+
+    .div-feaMenu-button{
+        margin-top: 350px;
+        align-self:flex-end;
+        width: 100px;
+        border-color: #FBDC6A;
+        color: #FBDC6A;
+    }
+
+    .div-feaMenu-button-container {
+        display: flex;
+        justify-content: flex-end; /* Align items to the right */
+        align-items: flex-end; /* Align items at the bottom */
+        height: 10%; /* Take full height of the parent container */
+    }
+
+        
+    .div-upcEvent{
+        margin-top: 2800px;
+    }
+
+    .div-upcEvent{
+        position: absolute;
+        width: 1519px;
+        height: 1300px;
+        background-color: #131B19;
+        background-image: url('Images/rh2.png'); /* Background image */
+        background-size: auto 100%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        padding-top: 100px;
+        text-align: center;
+        padding: 20px;
+        left: 50%; /* Move the left edge of the element 50% to the right from the left of the parent */
+        transform: translate(-50%, 0%);
+    }
+
+    .div-ucpEvent-IntroText{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 100px;
+        color: #FBDC6A;
+        margin-top: 40px;
+    }
+
+    .div-ucpEvent-Body-1{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 18px;
+        color: white;
+        margin-top: 20px;
+    }
+
+    .div-ucpEvent-Margin{
+        margin-top: 30px;
+    }
+
+    .div-ucpEvent-ImageSize{
+        width: auto;
+        height: 600px;
+    }
+
+    .div-ucpEvent-CardFont-Date{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 14px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 30px;
+        color: #FBDC6A;
+    }
+
+    .div-ucpEvent-CardFont-Title{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 24px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        color: #A40B0B;
+    }
+
+    .div-ucpEvent-CardFont-Paragraph{
+        font-family: 'font-Bitter-Light', sans-serif;
+        font-size: 14px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    .div-ucpEvent-CardFont-Paragraph2{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 14px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 0px;
+        color: #FBDC6A;
+    }
+
+    
+    .div-Gallery{
+        position: absolute;
+        width: 1519px;
+        height: 1700px;
+        left: 50%; /* Move the left edge of the element 50% to the right from the left of the parent */
+        transform: translate(-50%, 0%);
+        margin-top: 4100px;
+        text-align: center;
+        
+    }
+
+    .div-Gallery-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 65px;
+        color: white;
+        margin-top: 40px;
+    }
+
+    .div-Gallery-Body-Text{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 16px;
+        color: #FBDC6A;
+        margin-top: 20px;
+    }
+
+    .div-Gallery-Break{
+        height: 50px;
+    }
+
+    .div-Gallery-Content-Height{
+        height: 360px;
+        padding: 30px;
+        margin-bottom: 90px;
+        margin-top: -20px;
+    }
+
+    .div-Gallery-Content-Height-2{
+        height: 220px;
+        padding: 30px;
+        margin-bottom: -10px;
+        margin-top: 20px;
+    }
+
+    .div-Gallery-Content-Height-3{
+        height: 400px;
+        padding: 30px;
+        margin-top: -50px;
+        margin-bottom: 100px;
+    }
+
+    .div-Gallery-Content-Height-4{
+        height: 360px;
+        padding: 30px;
+        margin-top: -70px;
+    }
+
+    .div-Gallery-Image{
+        width: 320px;
+        height: 450px;
+        overflow: hidden;
+        object-fit: cover; /* Ensures the image covers the container */
+        object-position: center;
+        transition: transform 0.5s ease;
+    }
+
+    .div-Gallery-Image-2{
+        width: 320px;
+        height: 340px;
+        overflow: hidden;
+        object-fit: cover; /* Ensures the image covers the container */
+        object-position: center;
+        transition: transform 0.5s ease;
+    }
+
+    .div-Gallery-Image-3{
+        width: 320px;
+        height: 500px;
+        overflow: hidden;
+        object-fit: cover; /* Ensures the image covers the container */
+        object-position: center;
+        transition: transform 0.5s ease;
+    }
+
+    .div-Gallery-Image-4{
+        width: 320px;
+        height: 480px;
+        overflow: hidden;
+        object-fit: cover; /* Ensures the image covers the container */
+        object-position: center;
+        transition: transform 0.5s ease;
+    }
+
+    .div-Gallery-font-bitter-semibold{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 16px;
+    }
+
+    .div-Gallery-button{
+        margin-top: 160px;
+        align-self:flex-end;
+        width: auto;
+        border-color: #FBDC6A;
+        color: #FBDC6A;
+    }
+
+    .div-Gallery-button-container {
+        display: flex;
+        justify-content: flex-end; /* Align items to the right */
+        align-items: flex-end; /* Align items at the bottom */
+        height: 100%; /* Take full height of the parent container */
+    }
+
+    
+    .div-Book-Event{
+        position: absolute;
+        width: 1519px;
+        height: 400px;
+        margin-top: 5800px;
+        background-color:#FBDC6A;
+        background-image: url('Images/rh2.png'); /* Background image */
+        background-size: auto 200%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        padding-top: 100px;
+        padding: 20px;
+        left: 50%; /* Move the left edge of the element 50% to the right from the left of the parent */
+        transform: translate(-50%, 0%);
+    }
+
+    .div-Book-Event-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 70px;
+        color:#A40B0B;
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .div-Book-Event-font-bitter-semibold{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 18px;
+    }
+
+    .div-Book-Event-button-container{
+        display: flex;
+        justify-content:center; /* Align items to the right */
+        align-items: flex-end; /* Align items at the bottom */
+    }
+
+    .div-Book-Event-button{
+        margin-top: 20px;
+        width: auto;
+        color:#A40B0B; 
+        background-color: white; 
+        border: none; 
+        width: 120px;
+    }
+
+    .footer-margin{
+        margin-top: 6200px;
+        
+    }
+    
+    .credits{
+        
+        margin-top: 160px;
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 12px;
+        text-align: left;
+        color: white;
+        opacity: 60%;
+    }
+    
+
+}
+
+@media (min-width: 1299px) and (max-width: 1300.98px){
+    /* Large devices (desktops, 992px and up) */
+ /* Large devices (desktops, 992px and up) */
+
+    body {
+        background-color: #A40B0B;
+        background-image: url('Images/rh.png'); /* Background image */
+        background-size: auto 160%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        background-repeat: repeat-y; /* Prevents the background image from repeating */
+        margin: 0; /* Reset default margin */
+        padding: 0; /* Reset default padding */
+        height: 100vh; /* Set the body height to fill the viewport */
+    }
+
+    .div-hero-height{
+        height: 1500px; /* Height for lg screens */
+    }
+    
+    .div-hero-circle-gif {
+        width: 800px; /* Width of the circle */
+        height: 800px; /* Height of the circle */
+        background-image: url('Images/Vinyl.gif'); /* Path to your GIF */
+        background-size: cover; /* Ensures the GIF covers the circle */
+        background-position: center; /* Centers the GIF within the circle */
+        border-radius: 50%; /* Makes the div a circle */
+        overflow: hidden;
+        display: inline-block;
+    }
+    
+    .div-hero-vinyl-cover {
+        position: absolute;
+        top: 679px;
+        left: 50%; /* Move the left edge of the element 50% to the right from the left of the parent */
+        transform: translate(-50%, 0%);
+        width: 950px; /* Adjust width as needed */
+        height: 620px; /* Adjust height as needed */
+        background-image: url('Images/vinylCover.png'); /* Path to your GIF */
+        background-size: cover; /* Ensures the GIF covers the circle */
+        background-position: center; /* Centers the GIF within the circle */
+    }
+
+    .div-hero-font-Poller {
+        font-family: 'font-Poller', sans-serif;
+        font-size: 80px;
+        color: #FBDC6A;
+    }
+
+     
+    .div-feaMenu{
+        position: absolute;
+        width: 1519px;
+        height: 1700px;
+        background-color: black;
+        background-image: url('Images/feuMenuBG.jpg'); /* Background image */
+        background-size: auto 150%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        padding-top: 100px;
+        text-align: center;
+        padding: 20px;
+        margin-top: 1400px;
+        left: 50%; /* Move the left edge of the element 50% to the right from the left of the parent */
+        transform: translate(-50%, 0%);
+    }
+
+    .div-feaMenu-marginTop{
+        margin-top: 0px;
+    }
+
+    .div-feaMenu-content-height{
+        height: 400px;
+    }
+
+    .div-feaMenu-IntroText{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 120px;
+        color: #FBDC6A;
+        margin-top: 40px;
+    }
+
+    .div-feaMenu-Body-1{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 20px;
+        color: #FFFFFF;
+        margin-top: 40px;
+    }
+
+    .div-feaMenu-Body-2{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 20px;
+        color: #9747FF;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .div-feaMenu-font-bitter-semibold{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 14px;
+    }
+
+    .div-feaMenu-button{
+        margin-top: 500px;
+        align-self:flex-end;
+        width: 120px;
+        border-color: #FBDC6A;
+        color: #FBDC6A;
+    }
+
+    .div-feaMenu-button-container {
+        display: flex;
+        justify-content: flex-end; /* Align items to the right */
+        align-items: flex-end; /* Align items at the bottom */
+        height: 10%; /* Take full height of the parent container */
+    }
+
+        
+    .div-upcEvent{
+        margin-top: 3100px;
+    }
+
+    .div-upcEvent{
+        position: absolute;
+        width: 1519px;
+        height: 1500px;
+        background-color: #131B19;
+        background-image: url('Images/rh2.png'); /* Background image */
+        background-size: auto 100%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        padding-top: 100px;
+        text-align: center;
+        padding: 20px;
+        left: 50%; /* Move the left edge of the element 50% to the right from the left of the parent */
+        transform: translate(-50%, 0%);
+    }
+
+    .div-ucpEvent-IntroText{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 120px;
+        color: #FBDC6A;
+        margin-top: 40px;
+    }
+
+    .div-ucpEvent-Body-1{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 20px;
+        color: white;
+        margin-top: 20px;
+    }
+
+    .div-ucpEvent-Margin{
+        margin-top: 30px;
+    }
+
+    .div-ucpEvent-ImageSize{
+        width: auto;
+        height: 700px;
+    }
+
+    .div-ucpEvent-CardFont-Date{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 18px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 30px;
+        color: #FBDC6A;
+    }
+
+    .div-ucpEvent-CardFont-Title{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 28px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        color: #A40B0B;
+    }
+
+    .div-ucpEvent-CardFont-Paragraph{
+        font-family: 'font-Bitter-Light', sans-serif;
+        font-size: 18px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    .div-ucpEvent-CardFont-Paragraph2{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 18px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 0px;
+        color: #FBDC6A;
+    }
+
+    
+    .div-Gallery{
+        position: absolute;
+        width: 1519px;
+        height: 2200px;
+        left: 50%; /* Move the left edge of the element 50% to the right from the left of the parent */
+        transform: translate(-50%, 0%);
+        margin-top: 4600px;
+        text-align: center;
+        
+    }
+
+    .div-Gallery-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 120px;
+        color: white;
+        margin-top: 40px;
+    }
+
+    .div-Gallery-Body-Text{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 20px;
+        color: #FBDC6A;
+        margin-top: 20px;
+    }
+
+    .div-Gallery-Break{
+        height: 50px;
+    }
+
+    .div-Gallery-Content-Height{
+        height: 460px;
+        padding: 30px;
+        margin-bottom: 90px;
+        margin-top: -20px;
+    }
+
+    .div-Gallery-Content-Height-2{
+        height: 320px;
+        padding: 30px;
+        margin-bottom: -10px;
+        margin-top: 20px;
+    }
+
+    .div-Gallery-Content-Height-3{
+        height: 500px;
+        padding: 30px;
+        margin-top: -50px;
+        margin-bottom: 100px;
+    }
+
+    .div-Gallery-Content-Height-4{
+        height: 460px;
+        padding: 30px;
+        margin-top: -70px;
+    }
+
+    .div-Gallery-Image{
+        width: 420px;
+        height: 550px;
+        overflow: hidden;
+        object-fit: cover; /* Ensures the image covers the container */
+        object-position: center;
+        transition: transform 0.5s ease;
+    }
+
+    .div-Gallery-Image-2{
+        width: 420px;
+        height: 440px;
+        overflow: hidden;
+        object-fit: cover; /* Ensures the image covers the container */
+        object-position: center;
+        transition: transform 0.5s ease;
+    }
+
+    .div-Gallery-Image-3{
+        width: 420px;
+        height: 600px;
+        overflow: hidden;
+        object-fit: cover; /* Ensures the image covers the container */
+        object-position: center;
+        transition: transform 0.5s ease;
+    }
+
+    .div-Gallery-Image-4{
+        width: 420px;
+        height: 580px;
+        overflow: hidden;
+        object-fit: cover; /* Ensures the image covers the container */
+        object-position: center;
+        transition: transform 0.5s ease;
+    }
+
+    .div-Gallery-font-bitter-semibold{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 20px;
+    }
+
+    .div-Gallery-button{
+        margin-top: 160px;
+        align-self:flex-end;
+        width: auto;
+        border-color: #FBDC6A;
+        color: #FBDC6A;
+    }
+
+    .div-Gallery-button-container {
+        display: flex;
+        justify-content: flex-end; /* Align items to the right */
+        align-items: flex-end; /* Align items at the bottom */
+        height: 100%; /* Take full height of the parent container */
+    }
+
+    
+    .div-Book-Event{
+        position: absolute;
+        width: 1519px;
+        height: 500px;
+        margin-top: 6700px;
+        background-color:#FBDC6A;
+        background-image: url('Images/rh2.png'); /* Background image */
+        background-size: auto 200%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        padding-top: 100px;
+        padding: 20px;
+        left: 50%; /* Move the left edge of the element 50% to the right from the left of the parent */
+        transform: translate(-50%, 0%);
+    }
+
+    .div-Book-Event-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 90px;
+        color:#A40B0B;
+        margin-top: 120px;
+        text-align: center;
+    }
+
+    .div-Book-Event-font-bitter-semibold{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 20px;
+    }
+
+    .div-Book-Event-button-container{
+        display: flex;
+        justify-content:center; /* Align items to the right */
+        align-items: flex-end; /* Align items at the bottom */
+    }
+
+    .div-Book-Event-button{
+        margin-top: 20px;
+        width: auto;
+        color:#A40B0B; 
+        background-color: white; 
+        border: none; 
+        width: 140px;
+    }
+
+    .footer-margin{
+        margin-top: 7200px;
+        
+    }
+    
+    .credits{
+        
+        margin-top: 160px;
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 20px;
+        text-align: left;
+        color: white;
+        opacity: 60%;
+    }
+    
+
+}
+
+@media (min-width: 1300.98px) and (max-width: 1500.98px){
+    /* Large devices (desktops, 992px and up) */
+ /* Large devices (desktops, 992px and up) */
+
+    body {
+        background-color: #A40B0B;
+        background-image: url('Images/rh.png'); /* Background image */
+        background-size: auto 160%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        background-repeat: repeat-y; /* Prevents the background image from repeating */
+        margin: 0; /* Reset default margin */
+        padding: 0; /* Reset default padding */
+        height: 100vh; /* Set the body height to fill the viewport */
+    }
+
+    .div-hero-height{
+        height: 1500px; /* Height for lg screens */
+    }
+    
+    .div-hero-circle-gif {
+        width: 800px; /* Width of the circle */
+        height: 800px; /* Height of the circle */
+        background-image: url('Images/Vinyl.gif'); /* Path to your GIF */
+        background-size: cover; /* Ensures the GIF covers the circle */
+        background-position: center; /* Centers the GIF within the circle */
+        border-radius: 50%; /* Makes the div a circle */
+        overflow: hidden;
+        display: inline-block;
+    }
+    
+    .div-hero-vinyl-cover {
+        position: absolute;
+        top: 679px;
+        left: 50%; /* Move the left edge of the element 50% to the right from the left of the parent */
+        transform: translate(-50%, 0%);
+        width: 950px; /* Adjust width as needed */
+        height: 620px; /* Adjust height as needed */
+        background-image: url('Images/vinylCover.png'); /* Path to your GIF */
+        background-size: cover; /* Ensures the GIF covers the circle */
+        background-position: center; /* Centers the GIF within the circle */
+    }
+
+    .div-hero-font-Poller {
+        font-family: 'font-Poller', sans-serif;
+        font-size: 80px;
+        color: #FBDC6A;
+    }
+
+     
+    .div-feaMenu{
+        position: absolute;
+        width: 1519px;
+        height: 1500px;
+        background-color: black;
+        background-image: url('Images/feuMenuBG.jpg'); /* Background image */
+        background-size: auto 150%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        padding-top: 100px;
+        text-align: center;
+        padding: 20px;
+        margin-top: 1400px;
+        left: 50%; /* Move the left edge of the element 50% to the right from the left of the parent */
+        transform: translate(-50%, 0%);
+    }
+
+    .div-feaMenu-marginTop{
+        margin-top: 0px;
+    }
+
+    .div-feaMenu-content-height{
+        height: 400px;
+    }
+
+    .div-feaMenu-IntroText{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 100px;
+        color: #FBDC6A;
+        margin-top: 40px;
+    }
+
+    .div-feaMenu-Body-1{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 20px;
+        color: #FFFFFF;
+        margin-top: 40px;
+    }
+
+    .div-feaMenu-Body-2{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 20px;
+        color: #9747FF;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .div-feaMenu-font-bitter-semibold{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 14px;
+    }
+
+    .div-feaMenu-button{
+        margin-top: 360px;
+        align-self:flex-end;
+        width: 120px;
+        border-color: #FBDC6A;
+        color: #FBDC6A;
+    }
+
+    .div-feaMenu-button-container {
+        display: flex;
+        justify-content: flex-end; /* Align items to the right */
+        align-items: flex-end; /* Align items at the bottom */
+        height: 10%; /* Take full height of the parent container */
+    }
+
+        
+    .div-upcEvent{
+        margin-top: 2900px;
+    }
+
+    .div-upcEvent{
+        position: absolute;
+        width: 1519px;
+        height: 1500px;
+        background-color: #131B19;
+        background-image: url('Images/rh2.png'); /* Background image */
+        background-size: auto 100%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        padding-top: 100px;
+        text-align: center;
+        padding: 20px;
+        left: 50%; /* Move the left edge of the element 50% to the right from the left of the parent */
+        transform: translate(-50%, 0%);
+    }
+
+    .div-ucpEvent-IntroText{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 100px;
+        color: #FBDC6A;
+        margin-top: 40px;
+    }
+
+    .div-ucpEvent-Body-1{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 20px;
+        color: white;
+        margin-top: 20px;
+    }
+
+    .div-ucpEvent-Margin{
+        margin-top: 30px;
+    }
+
+    .div-ucpEvent-ImageSize{
+        width: auto;
+        height: 700px;
+    }
+
+    .div-ucpEvent-CardFont-Date{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 18px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 30px;
+        color: #FBDC6A;
+    }
+
+    .div-ucpEvent-CardFont-Title{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 28px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        color: #A40B0B;
+    }
+
+    .div-ucpEvent-CardFont-Paragraph{
+        font-family: 'font-Bitter-Light', sans-serif;
+        font-size: 18px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    .div-ucpEvent-CardFont-Paragraph2{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 18px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 0px;
+        color: #FBDC6A;
+    }
+
+    
+    .div-Gallery{
+        position: absolute;
+        width: 1519px;
+        height: 1800px;
+        left: 50%; /* Move the left edge of the element 50% to the right from the left of the parent */
+        transform: translate(-50%, 0%);
+        margin-top: 4400px;
+        text-align: center;
+        
+    }
+
+    .div-Gallery-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 100px;
+        color: white;
+        margin-top: 40px;
+    }
+
+    .div-Gallery-Body-Text{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 20px;
+        color: #FBDC6A;
+        margin-top: 20px;
+    }
+
+    .div-Gallery-Break{
+        height: 50px;
+    }
+
+    .div-Gallery-Content-Height{
+        height: 360px;
+        padding: 30px;
+        margin-bottom: 90px;
+        margin-top: -20px;
+    }
+
+    .div-Gallery-Content-Height-2{
+        height: 220px;
+        padding: 30px;
+        margin-bottom: -10px;
+        margin-top: 20px;
+    }
+
+    .div-Gallery-Content-Height-3{
+        height: 400px;
+        padding: 30px;
+        margin-top: -50px;
+        margin-bottom: 100px;
+    }
+
+    .div-Gallery-Content-Height-4{
+        height: 360px;
+        padding: 30px;
+        margin-top: -70px;
+    }
+
+    .div-Gallery-Image{
+        width: 320px;
+        height: 450px;
+        overflow: hidden;
+        object-fit: cover; /* Ensures the image covers the container */
+        object-position: center;
+        transition: transform 0.5s ease;
+    }
+
+    .div-Gallery-Image-2{
+        width: 320px;
+        height: 340px;
+        overflow: hidden;
+        object-fit: cover; /* Ensures the image covers the container */
+        object-position: center;
+        transition: transform 0.5s ease;
+    }
+
+    .div-Gallery-Image-3{
+        width: 320px;
+        height: 500px;
+        overflow: hidden;
+        object-fit: cover; /* Ensures the image covers the container */
+        object-position: center;
+        transition: transform 0.5s ease;
+    }
+
+    .div-Gallery-Image-4{
+        width: 320px;
+        height: 480px;
+        overflow: hidden;
+        object-fit: cover; /* Ensures the image covers the container */
+        object-position: center;
+        transition: transform 0.5s ease;
+    }
+
+    .div-Gallery-font-bitter-semibold{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 20px;
+    }
+
+    .div-Gallery-button{
+        margin-top: 160px;
+        align-self:flex-end;
+        width: auto;
+        border-color: #FBDC6A;
+        color: #FBDC6A;
+    }
+
+    .div-Gallery-button-container {
+        display: flex;
+        justify-content: flex-end; /* Align items to the right */
+        align-items: flex-end; /* Align items at the bottom */
+        height: 100%; /* Take full height of the parent container */
+    }
+
+    
+    .div-Book-Event{
+        position: absolute;
+        width: 1519px;
+        height: 500px;
+        margin-top: 6200px;
+        background-color:#FBDC6A;
+        background-image: url('Images/rh2.png'); /* Background image */
+        background-size: auto 200%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        padding-top: 100px;
+        padding: 20px;
+        left: 50%; /* Move the left edge of the element 50% to the right from the left of the parent */
+        transform: translate(-50%, 0%);
+    }
+
+    .div-Book-Event-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 70px;
+        color:#A40B0B;
+        margin-top: 140px;
+        text-align: center;
+    }
+
+    .div-Book-Event-font-bitter-semibold{
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 20px;
+    }
+
+    .div-Book-Event-button-container{
+        display: flex;
+        justify-content:center; /* Align items to the right */
+        align-items: flex-end; /* Align items at the bottom */
+    }
+
+    .div-Book-Event-button{
+        margin-top: 20px;
+        width: auto;
+        color:#A40B0B; 
+        background-color: white; 
+        border: none; 
+        width: 140px;
+    }
+
+    .footer-margin{
+        margin-top: 6700px;
+        
+    }
+    
+    .credits{
+        
+        margin-top: 160px;
+        font-family: 'font-Bitter-SemiBold', sans-serif;
+        font-size: 20px;
+        text-align: left;
+        color: white;
+        opacity: 60%;
+    }
+    
+
+}
+
+@media (min-width: 1900px) {
+    /* Extra large devices (large desktops, 1200px and up) */
+
+    /*
+    DIV HERO
+    */
+    .div-hero{
+        height: 1900px; 
+    }
+    .div-hero-height{
+        height: 1900px; /* Height for xl screens */
+    }
+
+    
+}

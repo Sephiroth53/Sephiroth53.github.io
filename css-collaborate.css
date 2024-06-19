@@ -1,0 +1,1080 @@
+/*
+    FONTS
+*/
+
+@font-face {
+    font-family: 'font-Poller';
+    src: url('fonts/PollerOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font-Bitter';
+    src: url('fonts/Bitter-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font-Bitter-Light';
+    src: url('fonts/Bitter-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font-Bitter-SemiBold';
+    src: url('fonts/Bitter-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font-SourceSerifPro';
+    src: url('fonts/s') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #A40B0B;
+    background-image: url('Images/rh.png'); /* Background image */
+    background-size: auto 30%; /* Cover the entire background area */
+    background-position: center; /* Center the background image */
+    background-repeat: repeat-y; /* Prevents the background image from repeating */
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+    
+}
+
+/* FOR FADE IN ANIMATION OF DIV HERO */
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1s ease-in forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+/*
+    HOMEPAGE CONTENTS
+
+*/
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Adjust as needed: space-between, space-around, etc. */
+    align-items: center; /* Adjust as needed: flex-start, flex-end, center, etc. */
+    height: 1000px; /* Set the height of the container */
+}
+
+/*
+    DIV HERO
+
+*/
+
+.div-hero{
+    height: 650PX;
+    background-color: #000000;
+    background-image: url('Images/collaborate-bg.jpg'); /* Background image */
+    background-size: auto 160%; /* Cover the entire background area */
+    background-position: center; /* Center the background image */
+}
+
+.div-Hero-Intro-Text{
+    font-family: 'font-Poller', sans-serif;
+    font-size: 100px;
+    color:white;
+    margin-top: 280px;
+    text-align: right;
+    text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+/*
+    DIV OPEN DATES
+
+*/
+
+.div-open-dates{
+height: 2000px;
+}
+
+.div-open-dates-Intro-Text{
+    font-family: 'font-Poller', sans-serif;
+    font-size: 120px;
+    color:#FBDC6A;
+    margin-top: 180px;
+    text-align: center;
+    text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.div-open-dates-Body{
+    font-family: 'font-Bitter', sans-serif;
+    font-size: 22px;
+    color:white;
+    margin-top: 20px;
+    margin-left: 5px;
+    text-align: center;
+
+}
+
+.div-open-dates-card-height{
+    height: 400px;
+
+}
+
+.div-open-dates-margin-top{
+    margin-top: 200px;
+}
+
+.div-open-dates-Card-Title-Text{
+    font-family: 'font-Poller', sans-serif;
+    font-size: 40px;
+    color:#FBDC6A;
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.div-open-dates-Card-Body-Text{
+    font-family: 'font-Poller', sans-serif;
+    font-size: 150px;
+    color:#FBDC6A;
+    text-align: center;
+    text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.div-open-dates-Card-Footer-Text{
+    font-family: 'font-Poller', sans-serif;
+    font-size: 20px;
+    color:#FBDC6A;
+    text-align: center;
+    text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.card{
+    background-color: #A40B0B;
+    width: 320px;
+    align-self: center;
+    border: 4px solid #FBDC6A; /* 2px solid black border */
+    border-radius: 10px; /* Optional: add some rounded corners */
+    box-shadow: 6px 8px 2px rgba(0, 0, 0, 0.3);;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px; /* Match the card's border-radius */
+}
+
+.overlay-text {
+    color: white;
+    font-family: 'font-Poller', sans-serif;
+    font-size: 40px; /* Adjust font size as needed */
+    text-align: center;
+}
+
+.div-open-dates-middle{
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center;
+}
+
+/*
+    DIV BOOKING
+
+*/
+
+
+.div-booking{
+    height: 900px;
+    background-color: rgba(41, 0, 0, 0.59);
+    color: #fff;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.div-booking-Title-Text{
+    font-family: 'font-Poller', sans-serif;
+    font-size: 40px;
+    color:white;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.div-booking-Body-Text{
+    font-family: 'font-Bitter', sans-serif;
+    font-size: 20px;
+    color:white;
+    text-align: left;
+    margin-bottom: 20px;
+    text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.div-booking .right-side {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.div-booking label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.div-booking input[type="text"],
+.div-booking input[type="email"],
+.div-booking textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.div-booking textarea {
+    height: 150px;
+}
+
+.div-booking input[type="date"],
+.div-booking select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.div-booking button {
+    background-color: #ffc107;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.div-booking button:hover {
+    background-color: #e0a800;
+}
+
+.div-booking .date-time-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+
+.div-booking .date-time-container label {
+    width: 0%;
+    margin-bottom: 0;
+}
+
+.div-booking .date-time-container input[type="date"],
+.div-booking .date-time-container select {
+    width: 100%;
+}
+
+.div-booking .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.div-booking .checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.div-booking .terms-text {
+    margin-left: 10px;
+    font-size: 12px;
+    color: black;
+    margin-top: 5px;
+}
+
+.div-booking .terms-notification {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+    .div-hero {
+        height: 200px;
+        background-color: #000000;
+        background-image: url('Images/collaborate-bg.jpg'); /* Background image */
+        background-size: auto 120%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+
+    .div-Hero-Intro-Text {
+        font-family: 'font-Poller', sans-serif;
+        font-size: 20px;
+        color: white;
+        margin-top: 80px;
+        text-align: right;
+        text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .div-open-dates {
+        height: 1800px;
+    }
+
+    .div-open-dates-Intro-Text {
+        font-family: 'font-Poller', sans-serif;
+        font-size: 24px;
+        color: #FBDC6A;
+        margin-top: 40px;
+        text-align: center;
+        text-shadow: 3px 1px 1px rgba(0, 0, 0, 0.3);
+    }
+
+    .div-open-dates-Body {
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 10px;
+        color: white;
+        margin-top: 10px;
+        margin-left: 5px;
+        text-align: center;
+    }
+
+    .div-open-dates-card-height {
+        height: 200px;
+    }
+
+    .div-open-dates-margin-top {
+        margin-top: 15px;
+    }
+
+    .div-open-dates-Card-Title-Text {
+        font-family: 'font-Poller', sans-serif;
+        font-size: 20px;
+        color: #FBDC6A;
+        text-align: center;
+        margin-top: 10px;
+        text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.3);
+    }
+
+    .div-open-dates-Card-Body-Text {
+        font-family: 'font-Poller', sans-serif;
+        font-size: 36px;
+        color: #FBDC6A;
+        text-align: center;
+        text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.3);
+    }
+
+    .div-open-dates-Card-Footer-Text {
+        font-family: 'font-Poller', sans-serif;
+        font-size: 14px;
+        color: #FBDC6A;
+        text-align: center;
+        text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.3);
+    }
+
+    .card {
+        background-color: #A40B0B;
+        width: 60%; /* Reduced width to 80% */
+        align-self: center;
+        border: 2px solid #FBDC6A; /* 2px solid border */
+        border-radius: 10px; /* Optional: add some rounded corners */
+        box-shadow: 4px 6px 1px rgba(0, 0, 0, 0.3);
+        margin: 10px auto; /* Center the card and add space between cards */
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px; /* Match the card's border-radius */
+    }
+
+    .overlay-text {
+        color: white;
+        font-family: 'font-Poller', sans-serif;
+        font-size: 32px; /* Adjust font size as needed */
+        text-align: center;
+    }
+
+    .div-open-dates-middle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div-booking{
+        height: 1000px;
+        background-color: rgba(41, 0, 0, 0.59);
+        color: #fff;
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 100vh;
+        padding: 20px;
+    }
+    
+    .div-booking-Title-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 32px;
+        color:white;
+        text-align: left;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+    .div-booking-Body-Text{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 18px;
+        color:white;
+        text-align: left;
+        margin-bottom: 20px;
+        text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+
+
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .div-hero{
+        height: 350PX;
+        background-color: #000000;
+        background-image: url('Images/collaborate-bg.jpg'); /* Background image */
+        background-size: auto 160%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+    
+    .div-Hero-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 40px;
+        color:white;
+        margin-top: 200px;
+        text-align: right;
+        text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    
+    .div-open-dates{
+        height: 800px;
+    }
+    
+    .div-open-dates-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 60px;
+        color:#FBDC6A;
+        margin-top: 80px;
+        text-align: center;
+        text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+    .div-open-dates-Body{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 16px;
+        color:white;
+        margin-top: 20px;
+        margin-left: 5px;
+        text-align: center;
+    
+    }
+    
+    .div-open-dates-card-height{
+        height: 200px;
+    
+    }
+    
+    .div-open-dates-margin-top{
+        margin-top: 30px;
+    }
+    
+    .div-open-dates-Card-Title-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 20px;
+        color:#FBDC6A;
+        text-align: center;
+        margin-top: 20px;
+        text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+    .div-open-dates-Card-Body-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 34px;
+        color:#FBDC6A;
+        text-align: center;
+        text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+    .div-open-dates-Card-Footer-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 10px;
+        color:#FBDC6A;
+        text-align: center;
+        text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+    .card{
+        background-color: #A40B0B;
+        width: 100px;
+        align-self: center;
+        border: 4px solid #FBDC6A; /* 2px solid black border */
+        border-radius: 10px; /* Optional: add some rounded corners */
+        box-shadow: 6px 8px 2px rgba(0, 0, 0, 0.3);;
+    }
+    
+   
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px; /* Match the card's border-radius */
+    }
+    
+    .overlay-text {
+        color: white;
+        font-family: 'font-Poller', sans-serif;
+        font-size: 12px; /* Adjust font size as needed */
+        text-align: center;
+    }
+    
+    .div-open-dates-middle{
+        display: flex;
+        justify-content: center; /* Horizontal centering */
+        align-items: center;
+    }
+    
+}
+ 
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .div-hero{
+        height: 450PX;
+        background-color: #000000;
+        background-image: url('Images/collaborate-bg.jpg'); /* Background image */
+        background-size: auto 160%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+    
+    .div-Hero-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 50px;
+        color:white;
+        margin-top: 250px;
+        text-align: right;
+        text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .div-open-dates{
+        height: 1000px;
+    }
+    
+    .div-open-dates-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 80px;
+        color:#FBDC6A;
+        margin-top: 80px;
+        text-align: center;
+        text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+    .div-open-dates-Body{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 18px;
+        color:white;
+        margin-top: 20px;
+        margin-left: 5px;
+        text-align: center;
+    
+    }
+    
+    .div-open-dates-card-height{
+        height: 200px;
+    
+    }
+    
+    .div-open-dates-margin-top{
+        margin-top: 80px;
+    }
+    
+    .div-open-dates-Card-Title-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 24px;
+        color:#FBDC6A;
+        text-align: center;
+        margin-top: 20px;
+        text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+    .div-open-dates-Card-Body-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 54px;
+        color:#FBDC6A;
+        text-align: center;
+        text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+    .div-open-dates-Card-Footer-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 18px;
+        color:#FBDC6A;
+        text-align: center;
+        text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+    .card{
+        background-color: #A40B0B;
+        width: 150px;
+        align-self: center;
+        border: 4px solid #FBDC6A; /* 2px solid black border */
+        border-radius: 10px; /* Optional: add some rounded corners */
+        box-shadow: 6px 8px 2px rgba(0, 0, 0, 0.3);;
+    }
+    
+   
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px; /* Match the card's border-radius */
+    }
+    
+    .overlay-text {
+        color: white;
+        font-family: 'font-Poller', sans-serif;
+        font-size: 18px; /* Adjust font size as needed */
+        text-align: center;
+    }
+    
+    .div-open-dates-middle{
+        display: flex;
+        justify-content: center; /* Horizontal centering */
+        align-items: center;
+    }
+}
+ 
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .div-hero{
+        height: 550PX;
+        background-color: #000000;
+        background-image: url('Images/collaborate-bg.jpg'); /* Background image */
+        background-size: auto 160%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+    
+    .div-Hero-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 60px;
+        color:white;
+        margin-top: 300px;
+        text-align: right;
+        text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .div-open-dates{
+        height: 1000px;
+    }
+    
+    .div-open-dates-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 80px;
+        color:#FBDC6A;
+        margin-top: 80px;
+        text-align: center;
+        text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+    .div-open-dates-Body{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 18px;
+        color:white;
+        margin-top: 20px;
+        margin-left: 5px;
+        text-align: center;
+    
+    }
+    
+    .div-open-dates-card-height{
+        height: 300px;
+    
+    }
+    
+    .div-open-dates-margin-top{
+        margin-top: 20px;
+    }
+    
+    .div-open-dates-Card-Title-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 28px;
+        color:#FBDC6A;
+        text-align: center;
+        margin-top: 20px;
+        text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+    .div-open-dates-Card-Body-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 68px;
+        color:#FBDC6A;
+        text-align: center;
+        text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+    .div-open-dates-Card-Footer-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 22px;
+        color:#FBDC6A;
+        text-align: center;
+        text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+    .card{
+        background-color: #A40B0B;
+        width: 220px;
+        align-self: center;
+        border: 4px solid #FBDC6A; /* 2px solid black border */
+        border-radius: 10px; /* Optional: add some rounded corners */
+        box-shadow: 6px 8px 2px rgba(0, 0, 0, 0.3);;
+    }
+    
+   
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px; /* Match the card's border-radius */
+    }
+    
+    .overlay-text {
+        color: white;
+        font-family: 'font-Poller', sans-serif;
+        font-size: 24px; /* Adjust font size as needed */
+        text-align: center;
+    }
+    
+    .div-open-dates-middle{
+        display: flex;
+        justify-content: center; /* Horizontal centering */
+        align-items: center;
+    }
+}
+ 
+@media (min-width: 1199.98px) and (max-width: 1299.98px) {
+    .div-hero{
+        height: 650PX;
+        background-color: #000000;
+        background-image: url('Images/collaborate-bg.jpg'); /* Background image */
+        background-size: auto 160%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+    
+    .div-Hero-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 80px;
+        color:white;
+        margin-top: 350px;
+        text-align: right;
+        text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .div-hero{
+        height: 550PX;
+        background-color: #000000;
+        background-image: url('Images/collaborate-bg.jpg'); /* Background image */
+        background-size: auto 160%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+    
+    .div-Hero-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 60px;
+        color:white;
+        margin-top: 300px;
+        text-align: right;
+        text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .div-open-dates{
+        height: 1000px;
+    }
+    
+    .div-open-dates-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 80px;
+        color:#FBDC6A;
+        margin-top: 80px;
+        text-align: center;
+        text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+    .div-open-dates-Body{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 18px;
+        color:white;
+        margin-top: 20px;
+        margin-left: 5px;
+        text-align: center;
+    
+    }
+    
+    .div-open-dates-card-height{
+        height: 300px;
+    
+    }
+    
+    .div-open-dates-margin-top{
+        margin-top: 20px;
+    }
+    
+    .div-open-dates-Card-Title-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 28px;
+        color:#FBDC6A;
+        text-align: center;
+        margin-top: 20px;
+        text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+    .div-open-dates-Card-Body-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 68px;
+        color:#FBDC6A;
+        text-align: center;
+        text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+    .div-open-dates-Card-Footer-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 22px;
+        color:#FBDC6A;
+        text-align: center;
+        text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+    .card{
+        background-color: #A40B0B;
+        width: 240px;
+        align-self: center;
+        border: 4px solid #FBDC6A; /* 2px solid black border */
+        border-radius: 10px; /* Optional: add some rounded corners */
+        box-shadow: 6px 8px 2px rgba(0, 0, 0, 0.3);;
+    }
+    
+   
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px; /* Match the card's border-radius */
+    }
+    
+    .overlay-text {
+        color: white;
+        font-family: 'font-Poller', sans-serif;
+        font-size: 30px; /* Adjust font size as needed */
+        text-align: center;
+    }
+    
+    .div-open-dates-middle{
+        display: flex;
+        justify-content: center; /* Horizontal centering */
+        align-items: center;
+    }
+}
+ 
+ 
+@media (min-width: 1300.98px) and (max-width: 1500.98px){
+    .div-hero{
+        height: 650PX;
+        background-color: #000000;
+        background-image: url('Images/collaborate-bg.jpg'); /* Background image */
+        background-size: auto 160%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+    
+    .div-Hero-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 80px;
+        color:white;
+        margin-top: 350px;
+        text-align: right;
+        text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .div-Hero-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 60px;
+        color:white;
+        margin-top: 300px;
+        text-align: right;
+        text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .div-open-dates{
+        height: 1300px;
+    }
+    
+    .div-open-dates-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 80px;
+        color:#FBDC6A;
+        margin-top: 80px;
+        text-align: center;
+        text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+    .div-open-dates-Body{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 18px;
+        color:white;
+        margin-top: 20px;
+        margin-left: 5px;
+        text-align: center;
+    
+    }
+    
+    .div-open-dates-card-height{
+        height: 300px;
+    
+    }
+    
+    .div-open-dates-margin-top{
+        margin-top: 80px;
+    }
+    
+    .div-open-dates-Card-Title-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 32px;
+        color:#FBDC6A;
+        text-align: center;
+        margin-top: 20px;
+        text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+    .div-open-dates-Card-Body-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 98px;
+        color:#FBDC6A;
+        text-align: center;
+        text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+    .div-open-dates-Card-Footer-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 22px;
+        color:#FBDC6A;
+        text-align: center;
+        text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+    .card{
+        background-color: #A40B0B;
+        width: 240px;
+        align-self: center;
+        border: 4px solid #FBDC6A; /* 2px solid black border */
+        border-radius: 10px; /* Optional: add some rounded corners */
+        box-shadow: 6px 8px 2px rgba(0, 0, 0, 0.3);;
+    }
+    
+   
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px; /* Match the card's border-radius */
+    }
+    
+    .overlay-text {
+        color: white;
+        font-family: 'font-Poller', sans-serif;
+        font-size: 36px; /* Adjust font size as needed */
+        text-align: center;
+    }
+    
+    .div-open-dates-middle{
+        display: flex;
+        justify-content: center; /* Horizontal centering */
+        align-items: center;
+    }
+}

@@ -1,0 +1,661 @@
+
+@font-face {
+    font-family: 'font-Poller';
+    src: url('fonts/PollerOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font-Bitter';
+    src: url('fonts/Bitter-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font-Bitter-Light';
+    src: url('fonts/Bitter-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font-Bitter-SemiBold';
+    src: url('fonts/Bitter-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font-SourceSerifPro';
+    src: url('fonts/s') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #000000;
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+    
+}
+
+/* FOR FADE IN ANIMATION OF DIV HERO */
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1s ease-in forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+/*
+    DIV HERO
+
+*/
+
+.div-hero{
+    height: 650PX;
+    background-color: #000000;
+    background-image: url('Images/about-us-bg.jpg'); /* Background image */
+    background-size: auto 130%; /* Cover the entire background area */
+    background-position: center; /* Center the background image */
+}
+
+.div-Hero-Intro-Text{
+    font-family: 'font-Poller', sans-serif;
+    font-size: 100px;
+    color:white;
+    margin-top: 280px;
+    text-align: right;
+    text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/*
+    DIV Content 1
+
+*/
+
+.div-Content-1{
+    height: 800px;
+    background-color: #340000;
+    background-image: url('Images/rh.png'); /* Background image */
+    background-size: auto 130%; /* Cover the entire background area */
+    background-position: center; /* Center the background image */
+    
+}
+
+.div-Content-height{
+    height: 700px;
+    margin-top: 100px;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+}
+
+.div-Content-Highlight{
+    font-family: 'font-Bitter', sans-serif;
+    font-size: 36px;
+    color: #FBDC6A;
+    text-align: center;
+    font-weight: bold;
+}
+
+.div-Content-Text{
+    font-family: 'font-Bitter', sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 10px;
+    text-align: center;
+}
+
+.div-padding-top-1{
+    padding-top: 200px;
+}
+
+.div-padding-top-2{
+    padding-top: 600px;
+}
+
+
+.image-content{
+    height: 600px;
+    width: 600px;
+}
+
+/*
+    DIV Content 2
+
+*/
+
+
+.div-Content-2{
+    height: 800px;
+    background-color:#770000;
+    background-image: url('Images/rh.png'); /* Background image */
+    background-size: auto 120%; /* Cover the entire background area */
+    background-position: center; /* Center the background image */
+    
+}
+
+/*
+    DIV Content 4
+
+*/
+
+.div-Content-4{
+    height: 1000px;
+    background-color:#000000;
+    background-image: url('Images/about4.png'); /* Background image */
+    background-size: auto 100%; /* Cover the entire background area */
+    background-position: center; /* Center the background image */
+}
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+
+    .div-hero {
+        height: 200px;
+        background-color: #000000;
+        background-image: url('Images/about-us-bg.jpg'); /* Background image */
+        background-size: auto 100%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+
+    .div-Hero-Intro-Text {
+        font-family: 'font-Poller', sans-serif;
+        font-size: 24px;
+        color: white;
+        margin-top: 100px;
+        text-align: right;
+        text-shadow: 3px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .div-Content-1 {
+        height: 250px;
+        background-color: #340000;
+        background-image: url('Images/rh.png'); /* Background image */
+        background-size: auto 100%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+
+    .div-Content-height {
+        height: 280px;
+        margin-top: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div-padding-top-1 {
+        padding-top: 25px;
+    }
+
+    .div-padding-top-2 {
+        padding-top: 140px;
+    }
+
+    .div-Content-Highlight {
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 12px;
+        color: #FBDC6A;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .div-Content-Text {
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 8px;
+        color: #FFFFFF;
+        padding: 0px;
+        text-align: center;
+    }
+
+    .image-content {
+        height: 180px;
+        width: 180px;
+    }
+
+    .div-Content-2 {
+        height: 250px;
+        background-color: #770000;
+        background-image: url('Images/rh.png'); /* Background image */
+        background-size: auto 100%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+
+    .div-Content-4 {
+        height: 250px;
+        background-color: #000000;
+        background-image: url('Images/about4.png'); /* Background image */
+        background-size: auto 70%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    
+    .div-hero{
+        height: 350PX;
+        background-color: #000000;
+        background-image: url('Images/about-us-bg.jpg'); /* Background image */
+        background-size: auto 130%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+
+    .div-Hero-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 40px;
+        color:white;
+        margin-top: 200px;
+        text-align: right;
+        text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    
+    .div-Content-1{
+        height: 400px;
+        background-color: #340000;
+        background-image: url('Images/rh.png'); /* Background image */
+        background-size: auto 130%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        
+    }
+
+    .div-Content-height{
+        height: 400px;
+        margin-top: 90px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div-padding-top-1{
+        padding-top: 50px;
+    }
+
+    .div-padding-top-2{
+        padding-top: 200px;
+    }
+
+    .div-Content-Highlight{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 16px;
+        color: #FBDC6A;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .div-Content-Text{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 10px;
+        color: #FFFFFF;
+        padding: 0px;
+        text-align: center;
+    }
+
+    .image-content{
+        height: 220px;
+        width: 220px;
+    }
+
+
+    .div-Content-2{
+        height: 400px;
+        background-color:#770000;
+        background-image: url('Images/rh.png'); /* Background image */
+        background-size: auto 120%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        
+    }
+
+    .div-Content-4{
+        height: 400px;
+        background-color:#000000;
+        background-image: url('Images/about4.png'); /* Background image */
+        background-size: auto 75%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .div-hero{
+        height: 450PX;
+        background-color: #000000;
+        background-image: url('Images/about-us-bg.jpg'); /* Background image */
+        background-size: auto 130%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+
+    .div-Hero-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 50px;
+        color:white;
+        margin-top: 250px;
+        text-align: right;
+        text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    
+    .div-Content-1{
+        height: 450px;
+        background-color: #340000;
+        background-image: url('Images/rh.png'); /* Background image */
+        background-size: auto 130%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        
+    }
+
+    .div-Content-height{
+        height: 450px;
+        margin-top: 90px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div-padding-top-1{
+        padding-top: 70px;
+    }
+
+    .div-padding-top-2{
+        padding-top: 250px;
+    }
+
+    .div-Content-Highlight{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 18px;
+        color: #FBDC6A;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .div-Content-Text{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 12px;
+        color: #FFFFFF;
+        padding: 0px;
+        text-align: center;
+    }
+
+    .image-content{
+        height: 260px;
+        width: 260px;
+    }
+
+
+    .div-Content-2{
+        height: 450px;
+        background-color:#770000;
+        background-image: url('Images/rh.png'); /* Background image */
+        background-size: auto 120%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        
+    }
+
+    .div-Content-4{
+        height: 500px;
+        background-color:#000000;
+        background-image: url('Images/about4.png'); /* Background image */
+        background-size: auto 70%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+    
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .div-hero{
+        height: 550PX;
+        background-color: #000000;
+        background-image: url('Images/about-us-bg.jpg'); /* Background image */
+        background-size: auto 130%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+
+    .div-Hero-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 60px;
+        color:white;
+        margin-top: 300px;
+        text-align: right;
+        text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    
+    .div-Content-1{
+        height: 500px;
+        background-color: #340000;
+        background-image: url('Images/rh.png'); /* Background image */
+        background-size: auto 140%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        
+    }
+
+    .div-Content-height{
+        height: 500px;
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div-padding-top-1{
+        padding-top: 110px;
+    }
+
+    .div-padding-top-2{
+        padding-top: 300px;
+    }
+
+    .div-Content-Highlight{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 24px;
+        color: #FBDC6A;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .div-Content-Text{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 16px;
+        color: #FFFFFF;
+        padding: 0px;
+        text-align: center;
+    }
+
+    .image-content{
+        height: 400px;
+        width: 400px;
+    }
+
+
+    .div-Content-2{
+        height: 500px;
+        background-color:#770000;
+        background-image: url('Images/rh.png'); /* Background image */
+        background-size: auto 130%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        
+    }
+
+    .div-Content-4{
+        height: 500px;
+        background-color:#000000;
+        background-image: url('Images/about4.png'); /* Background image */
+        background-size: auto 80%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+}
+
+@media (min-width: 1199.98px) and (max-width: 1299.98px) {
+    .div-hero{
+        height: 650PX;
+        background-color: #000000;
+        background-image: url('Images/about-us-bg.jpg'); /* Background image */
+        background-size: auto 130%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+
+    .div-Hero-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 80px;
+        color:white;
+        margin-top: 350px;
+        text-align: right;
+        text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    
+    .div-Content-1{
+        height: 600px;
+        background-color: #340000;
+        background-image: url('Images/rh.png'); /* Background image */
+        background-size: auto 130%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        
+    }
+
+    .div-Content-height{
+        height: 600px;
+        margin-top: 70px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div-padding-top-1{
+        padding-top: 120px;
+    }
+
+    .div-padding-top-2{
+        padding-top: 350px;
+    }
+
+    .div-Content-Highlight{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 30px;
+        color: #FBDC6A;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .div-Content-Text{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 18px;
+        color: #FFFFFF;
+        padding: 0px;
+        text-align: center;
+    }
+
+    .image-content{
+        height: 450px;
+        width: 450px;
+    }
+
+
+    .div-Content-2{
+        height: 600px;
+        background-color:#770000;
+        background-image: url('Images/rh.png'); /* Background image */
+        background-size: auto 120%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        
+    }
+
+    .div-Content-4{
+        height: 600px;
+        background-color:#000000;
+        background-image: url('Images/about4.png'); /* Background image */
+        background-size: auto 90%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+}
+
+@media (min-width: 1300.98px) and (max-width: 1500.98px){
+
+    .div-hero{
+        height: 650PX;
+        background-color: #000000;
+        background-image: url('Images/about-us-bg.jpg'); /* Background image */
+        background-size: auto 130%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+
+    .div-Hero-Intro-Text{
+        font-family: 'font-Poller', sans-serif;
+        font-size: 80px;
+        color:white;
+        margin-top: 350px;
+        text-align: right;
+        text-shadow: 5px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    
+    .div-Content-1{
+        height: 600px;
+        background-color: #340000;
+        background-image: url('Images/rh.png'); /* Background image */
+        background-size: auto 140%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        
+    }
+
+    .div-Content-height{
+        height: 600px;
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div-padding-top-1{
+        padding-top: 140px;
+    }
+
+    .div-padding-top-2{
+        padding-top: 350px;
+    }
+
+    .div-Content-Highlight{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 34px;
+        color: #FBDC6A;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .div-Content-Text{
+        font-family: 'font-Bitter', sans-serif;
+        font-size: 20px;
+        color: #FFFFFF;
+        padding: 0px;
+        text-align: center;
+    }
+
+    .image-content{
+        height: 500px;
+        width: 500px;
+    }
+
+
+    .div-Content-2{
+        height: 600px;
+        background-color:#770000;
+        background-image: url('Images/rh.png'); /* Background image */
+        background-size: auto 130%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+        
+    }
+
+    .div-Content-4{
+        height: 600px;
+        background-color:#000000;
+        background-image: url('Images/about4.png'); /* Background image */
+        background-size: auto 90%; /* Cover the entire background area */
+        background-position: center; /* Center the background image */
+    }
+}
